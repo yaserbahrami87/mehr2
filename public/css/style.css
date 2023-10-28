@@ -1,0 +1,665 @@
+@font-face {
+    font-family: 'nianAmir';
+    /*src: url("../fonts/W_ferdosi.ttf");*/
+    src: url("../fonts/AnjomanMaxFN-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'yekan';
+    /*src: url("../fonts/W_yekan.ttf");*/
+    src: url("../fonts/AnjomanMaxFN-Regular.ttf"),
+         url("../fonts/AnjomanMaxFN-Regular.woff"),
+         url("../fonts/AnjomanMaxFN-Regular.woff2");
+}
+.bg_color_mazarat
+{
+    background-color: #b9b9b9;
+}
+
+*
+{
+    font-family: 'yekan';
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #1a1346;
+}
+
+
+
+#main_home{
+    background-color: #1a1346;
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#main_home img
+{
+    opacity: 0.8;
+}
+
+#main_home a,#signup a
+{
+    font-size: 1.3em;
+    color: #8e9092;
+    transition: 0.5s;
+}
+
+#main_home a:hover,#signup a:hover
+{
+    color: #2e3192;
+}
+
+#main_home >.row >div:first-child a::before
+{
+    content: url("../images/after.png");
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+
+#main_home  >.row > div:last-child a::after
+{
+    content: url("../images/after.png");
+    position: relative;
+    top: 10px;
+    right: 10px;
+}
+
+
+#signup input[type='text'],#signup input[type='password']
+{
+    background-color: #8e9092;
+    border-color: #8e9092;
+    color: #FFFFFF;
+}
+
+#signup{
+    background-color: #000000;
+    min-height: 100vh;
+    background-image: url("../images/background2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.signup_fa >div:first-child a:hover
+{
+    margin-left: 25px;
+}
+
+
+.signup_en > div:last-child a:hover
+{
+    margin-right: 25px;
+}
+
+
+#signup  li.nav-item
+{
+    position: relative;
+}
+
+.signup_en li.nav-item::after
+{
+    content: url("../images/after.png");
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    transition: 1s;
+    display: none;
+}
+
+.signup_en li.nav-item:hover::after
+{
+    display: block;
+}
+
+.signup_fa li.nav-item::before
+{
+    content: url("../images/after.png");
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    transition: 1s;
+    display: none;
+}
+
+.signup_fa li.nav-item:hover::before
+{
+    display: block;
+}
+
+
+
+#signup  label
+{
+    color: #ffffff;
+}
+
+#signup #collapseExample a
+{
+    font-size: 1.1rem;
+    min-width: 100px;
+}
+
+#signup #collapseLogin .input-group-text,#signup #collapseSignup .input-group-text
+{
+    background-color: #2e3192 !important;
+    border-color: #2e3192;
+    color: #ffffff;
+}
+
+footer
+{
+    border-top:2px solid #2e3192;
+    font-family: 'yekan';
+    font-size: 14px;
+}
+
+footer #bolt-footer
+{
+    top: -22px;
+}
+
+
+footer *
+{
+    font-family: 'yekan';
+}
+
+
+footer b{
+    color: #ffffff;
+    font-size: 1.1em;
+    line-height: 2;
+
+}
+
+footer a,footer p
+{
+    font-size: 1.10em;
+    color: #b9b9b9;
+    line-height: 1.7;
+}
+
+footer a:hover
+{
+    color: #2e3192;
+}
+
+footer ul
+{
+    list-style: none;
+    list-style-position: inside;
+}
+
+
+footer > div.row > div
+{
+    border-left:2px solid #2e3192;
+    height: 150px;
+}
+
+
+footer > div.row > div:nth-child(3)
+{
+    display: inherit;
+    justify-content: space-between;
+}
+
+footer > div.row > div:first-child
+{
+    border-right:2px solid #2e3192;
+}
+
+
+footer .social
+{
+    background-image: url("../images/social.png");
+    width: 30px;
+    height: 30px;
+    transition: 1s;
+}
+
+footer .social:hover
+{
+    background-image: url("../images/social-hover.png");
+}
+
+
+footer #facebook_footer
+{
+    background-position: 29px 0px;
+}
+
+footer #telegram_footer
+{
+    background-position: 59px 0px;
+}
+
+footer #insta_footer
+{
+    background-position: 89px 0px;
+}
+
+footer #whatsapp_footer
+{
+    background-position: 118px 0px;
+}
+
+
+#collapseGallery span:first-child a
+{
+    font-size: 1.1em;
+    font-weight: 200;
+}
+
+#collapseNews span a ,#collapseGallery span a,#collapseCall span a,#collapsePillars span a
+{
+    width: 236px;
+}
+
+#collapseGallery span a,#collapseNews span a,#collapseCall span a,#collapsePillars span a
+{
+    background-color: #555555;
+    padding: 0px 10px;
+    border-radius: 30px;
+
+}
+
+#collapseGallery span a:hover,#collapseNews span a:hover,#collapseCall span a:hover,#collapsePillars span a:hover
+{
+    background-color: #2e3192;
+    color: #ffffff;
+}
+
+.btn-primary
+{
+    background-color: #2e3192;
+    border-color: #2e3192;
+    color: #ffffff !important;
+}
+
+#main_gallery a
+{
+    font-family: 'yekan';
+}
+
+#main_gallery #navbarVerticalContent
+{
+    border-bottom:2px solid #2e3192;
+    padding-bottom: 10px;
+}
+
+#main_gallery #navbarVerticalContent li
+{
+    min-width: 110px;
+    text-align: center;
+    border-left: 1px solid #2e3192;
+}
+
+
+#main_gallery #navbarVerticalContent li:hover:after
+{
+    /*content: url("../images/after.png");*/
+    position: absolute;
+    top: 43px;
+}
+
+#main_gallery #navbarVerticalContent li.dropdown:hover:after
+{
+    top: 37px !important;
+
+}
+
+
+#main_gallery #navbarVerticalContent li a
+{
+    font-size: 0.84rem;
+}
+
+#main_gallery #navbarVerticalContent_en li a
+{
+    font-size: 0.80rem !important;
+}
+
+#main_gallery #navbarVerticalContent_en li
+{
+    min-width: 110px !important;
+}
+
+#main_gallery #navbarVerticalContent li:last-child
+{
+
+    border-left: none;
+}
+
+#main_gallery #navbarVerticalContent li:hover
+{
+
+}
+
+
+
+#main_gallery #navbarVerticalContent_en
+{
+    border-bottom:2px solid #2e3192;
+    padding-bottom: 10px;
+}
+
+#main_gallery #navbarVerticalContent_en li
+{
+    min-width: 130px;
+    text-align: center;
+    border-right: 1px solid #2e3192;
+
+}
+
+#main_gallery #navbarVerticalContent_en li:last-child
+{
+
+    border-right: none;
+}
+
+#main_gallery #navbarVerticalContent_en li:hover
+{
+
+}
+
+
+#main_gallery #gallery a
+{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#main_gallery #gallery img
+{
+    border-radius: 25px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
+}
+
+#main_gallery #gallery img:hover
+{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+@media only screen and (max-width:320px)
+{
+    #main_gallery #gallery img
+    {
+        height: 115px;
+    }
+}
+
+@media only screen and (min-width:321px) and (max-width: 375px)
+{
+
+    #main_gallery #gallery img
+    {
+        height: 142px;
+    }
+}
+
+@media only screen and (min-width:376px) and (max-width: 425px)
+{
+    #main_gallery #gallery img
+    {
+        height: 167px;
+    }
+}
+
+@media only screen and (min-width:426px) and (max-width: 768px)
+{
+    #main_gallery #gallery img
+    {
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width:768px)
+{
+    #main_home
+    {
+        background-size:230px ;
+        min-height: 70vh;
+    }
+
+    #main_home > div > div
+    {
+        text-align: center!important;
+    }
+
+    #signup{
+        background-size: 230px;
+        min-height: 70vh;
+    }
+
+    #signup > div:first-child
+    {
+        text-align: center !important;
+    }
+
+    .signup_fa li.nav-item::before
+    {
+        right: 20px;
+    }
+
+    .signup_fa #navbarSupportedContent .nav-item,#navbarVerticalContent .nav-item,#navbarVerticalContent_en .nav-item
+    {
+        background-color: #8e9092;
+        border-radius:30px ;
+        margin-bottom: 2px;
+
+    }
+
+    .signup_fa #navbarSupportedContent .nav-item a
+    {
+        color: #ffffff;
+    }
+
+    .signup_en #navbarSupportedContent .nav-item
+    {
+        background-color: #8e9092;
+        border-radius:30px ;
+        margin-bottom: 2px;
+
+    }
+
+    .signup_en #navbarSupportedContent .nav-item a
+    {
+        color: #ffffff;
+    }
+
+}
+
+@media only screen and (min-width: 2000px)
+{
+    #main_home,#signup
+    {
+         background-size: 800px;
+    }
+
+}
+
+
+#news img
+{
+    height: 226px;
+    border-radius: 25px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
+
+}
+
+
+#news img:hover
+{
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+#news a
+{
+    border-radius: 30px;
+    background-color: #8e9092;
+    transition: 0.5s;
+}
+
+#news a:hover
+{
+    background-color: #2e3192;
+    color: #ffffff;
+}
+
+#news .slick-next
+{
+    background: url("../images/arrows-next.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#news .slick-prev
+{
+    /*transform: rotate(180deg);*/
+    background: url("../images/arrows-next.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#news_single a
+{
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+#pillars_category
+{
+    background-image: url("../images/mazaarat_bg.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#pillars .name_referee
+{
+    background-color: #a7a9ac;
+    width: 60%;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    right: 80px;
+    top: -15px;
+    z-index: 2;
+}
+
+#pillars .name_referee_en
+{
+    background-color: #a7a9ac;
+    width: 60%;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    right: -80px;
+    top: -15px;
+    z-index: 2;
+}
+
+
+#pillars .position_referee
+{
+    background-color: #2e3192;
+    width: 60%;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    right: 110px;
+    top: -45px;
+}
+
+#pillars .position_referee_en
+{
+    background-color: #2e3192;
+    width: 60%;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+    right: -110px;
+    top: -45px;
+}
+
+#pillars .info_referee *
+{
+    margin: 0px;
+}
+
+#call_fa
+{
+    background-color: #8f9092;
+}
+
+.bg_silver
+{
+    background-color: #8f9092;
+}
+
+.upload_pictures  .card-title
+{
+    background-color: #2e3192;
+    border-radius: 30px;
+}
+
+.upload_pictures .form-group
+{
+    text-align: center;
+    background-color: #8e9092;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.upload_pictures .form-group textarea
+{
+    border-radius:0px 0px 30px 30px;
+}
+
+
+.upload_pictures .form-group input
+{
+    border-radius:0px 0px 30px 30px;
+}
+
+.upload_pictures .form-group input:first-child
+{
+    border-radius: 0px;
+}
+
+
+.signup_en *,.en *{
+    font-family: Arial !important;
+}
