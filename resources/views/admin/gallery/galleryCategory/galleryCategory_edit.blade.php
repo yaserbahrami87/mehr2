@@ -16,16 +16,11 @@
                             <div class="col-12 col-md-6">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <span class="input-group-text" > دسته بندی گالری به فارسی:<span class="text-danger">*</span></span>
+                                        <span class="input-group-text" > دسته بندی گالری :<span class="text-danger">*</span></span>
                                     </div>
                                     <input type="text" class="form-control"   id="category_fa" name="category_fa" value="{{old('category_fa',$gallery_category->category_fa)}}" />
                                 </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" > دسته بندی گالری به انگلیسی:<span class="text-danger">*</span></span>
-                                    </div>
-                                    <input type="text" class="form-control"   id="category_fa" name="category_en" value="{{old('category_en',$gallery_category->category_en)}}" />
-                                </div>
+
                                 <div class="form-group">
                                     <label for="status">وضعیت</label>
                                     <select class="form-control" id="status" name="status">

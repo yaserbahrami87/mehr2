@@ -42,7 +42,6 @@ class GalleryCategoryController extends Controller
 
         $this->validate($request,[
            'category_fa'    =>'required|string|max:100|unique:gallery_categories,category_fa',
-           'category_en'    =>'required|string|max:100|unique:gallery_categories,category_en',
         ]);
 
         $gallery_category=gallery_category::create($request->all());
@@ -93,7 +92,6 @@ class GalleryCategoryController extends Controller
 
         $this->validate($request,[
             'category_fa'    =>'required|string|max:100|unique:gallery_categories,category_fa,'.$gallery_category->id,
-            'category_en'    =>'required|string|max:100|unique:gallery_categories,category_en,'.$gallery_category->id,
             'status'         =>'required|boolean',
         ]);
         $status=$gallery_category->update($request->all());

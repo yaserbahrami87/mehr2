@@ -14,6 +14,7 @@
         <div class="col-md-2 align-items-center text-justify">
 
             <p>مالکیت حقوقی و معنوی این تارنما متعلق به دبیرخانه جشنواره مهر آفرینش می باشد</p>
+            
         </div>
         <div class="col-md-3 align-items-center text-center p-0 d-flex justify-content-around">
             <a href="#" target="_blank" class="d-inline-block social" id="facebook_footer"></a>
