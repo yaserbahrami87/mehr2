@@ -51,9 +51,7 @@ class GalleryController extends Controller
             'fname_fa'              =>'required|string|max:100',
             'lname_fa'              =>'required|string|max:100',
             'description_fa'        =>'nullable|string|max:200',
-            'fname_en'              =>'required|string|max:100',
-            'lname_en'              =>'required|string|max:100',
-            'description_en'        =>'nullable|string|max:200',
+
             'gallery_category_id'   =>'required|numeric',
             'festival_id'           =>'required|numeric',
             'image'                 =>'required|mimes:jpeg,jpg|max:2048',
@@ -63,8 +61,8 @@ class GalleryController extends Controller
             ]);
         if($request->has('image')&&$request->file('image')->isValid())
         {
-            $image=$gallery->fname_en.'_'.$gallery->lname_en.'_'.$gallery->gallery_category->category_en.'_'.time().'.'.$request->file('image')->extension();
-            $image_thumbnail='thumbnail_'.$gallery->fname_en.'_'.$gallery->lname_en.'_'.$gallery->gallery_category->category_en.'_'.time().'.'.$request->file('image')->extension();
+            $image=$gallery->id.time().'.'.$request->file('image')->extension();
+            $image_thumbnail='thumbnail_'.$gallery->id.time().'.'.$request->file('image')->extension();
             $path=public_path('/images/gallery/');
             $files=$request->file('image')->move($path, $image);
             $request->image=$image;
@@ -129,9 +127,7 @@ class GalleryController extends Controller
             'fname_fa'              =>'required|string|max:100',
             'lname_fa'              =>'required|string|max:100',
             'description_fa'        =>'nullable|string|max:200',
-            'fname_en'              =>'required|string|max:100',
-            'lname_en'              =>'required|string|max:100',
-            'description_en'        =>'nullable|string|max:200',
+
             'gallery_category_id'   =>'required|numeric',
             'festival_id'           =>'required|numeric',
         ]);
