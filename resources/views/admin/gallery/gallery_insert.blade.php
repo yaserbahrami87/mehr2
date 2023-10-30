@@ -22,23 +22,7 @@
                                     </div>
                                     <input type="file" class="form-control"  id="image" name="image" value="{{old('image')}}" />
                                 </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" > نام صاحب عکس:<span class="text-danger">*</span></span>
-                                    </div>
-                                    <input type="text" class="form-control"   id="fname_fa" name="fname_fa" value="{{old('fname_fa')}}" />
-                                </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text" > نام خانوادگی صاحب عکس:<span class="text-danger">*</span></span>
-                                    </div>
-                                    <input type="text" class="form-control"   id="lname_fa" name="lname_fa" value="{{old('lname_fa')}}" />
 
-                                </div>
-                                <div class="input-group mb-3">
-                                    <label for="description_fa">توضیحات عکس:</label>
-                                    <textarea id="description_fa" name="description_fa">{{old('description_fa')}}</textarea>
-                                </div>
 
                                 <div class="form-group">
                                     <label for="festival_id">دسته عکس</label>

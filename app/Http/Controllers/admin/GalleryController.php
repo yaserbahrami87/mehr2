@@ -48,9 +48,7 @@ class GalleryController extends Controller
         $gallery=gallery::latest()->first();
 
         $this->validate($request,[
-            'fname_fa'              =>'required|string|max:100',
-            'lname_fa'              =>'required|string|max:100',
-            'description_fa'        =>'nullable|string|max:200',
+
 
             'gallery_category_id'   =>'required|numeric',
             'festival_id'           =>'required|numeric',
@@ -124,9 +122,7 @@ class GalleryController extends Controller
     public function update(Request $request, gallery $gallery)
     {
         $this->validate($request,[
-            'fname_fa'              =>'required|string|max:100',
-            'lname_fa'              =>'required|string|max:100',
-            'description_fa'        =>'nullable|string|max:200',
+
 
             'gallery_category_id'   =>'required|numeric',
             'festival_id'           =>'required|numeric',
