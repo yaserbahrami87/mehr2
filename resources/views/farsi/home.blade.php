@@ -256,7 +256,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <a href="https://photo.mazaar.net/farsi/news/Announcing%20the%20results%20of%20the%20second%20International%20Mazaarat%20Photo%20Festival/show">
-                                <img src="/images/poster_mehr_2.jpg" class="d-block w-100" alt="...">
+                                <img src="/images/بنر-گنجینه-هنر.jpg" class="d-block w-100" alt="...">
                             </a>
                         </div>
                     </div>

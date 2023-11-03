@@ -11,18 +11,16 @@
             <a href="tel:09390482732" class="mr-3">09390482732</a>
             <a href="mailto:info@mazaar.net" class="d-block">info@mazaar.net</a>
         </div>
-        <div class="col-md-2 align-items-center text-justify">
-
-            <p>مالکیت حقوقی و معنوی این تارنما متعلق به دبیرخانه جشنواره مهر آفرینش می باشد</p>
-            
-        </div>
+        <!--
         <div class="col-md-3 align-items-center text-center p-0 d-flex justify-content-around">
             <a href="#" target="_blank" class="d-inline-block social" id="facebook_footer"></a>
             <a href="#" target="_blank" class="d-inline-block social" id="telegram_footer"></a>
             <a href="#" target="_blank" class="d-inline-block social" id="insta_footer"></a>
             <a href="#" target="_blank" class="d-inline-block social" id="whatsapp_footer"></a>
         </div>
-        <div class="col-md-3 d-flex justify-content-around align-items-center">
+        -->
+        <div class="col-md-8">
+
             <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
                 <img src="/images/logo_maktab.png" width="80px"  />
             </a>
@@ -33,9 +31,53 @@
             <a href="https://www.aqart.ir/" target="_blank">
                 <img src="/images/logo_moavenat.png" width="80px" />
             </a>
-
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/آموزش-عالی-فردوس.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/اصفهان.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-بجنورد.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-بیرجند.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-سمنان.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-سوره.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-سیستان.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-شاهد.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-شهر-کرد.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-هنر.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-هنر-اسلامی-تبریز.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-کاشان.png" width="80px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/پژوهشگاه-میراث-فرهنگی.png" width="80px" />
+            </a>
         </div>
 
+
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <p>مالکیت حقوقی و معنوی این تارنما متعلق به دبیرخانه جشنواره مهر آفرینش می باشد</p>
+        </div>
     </div>
 </footer>
 
@@ -43,116 +85,6 @@
 <script src="/js/bootstrap.bundle.min.js" ></script>
 
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d23eccc1-8bfc-4ee2-915d-3f1c6dc68a16";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
-<script>
-    $('#collapseGallery').on('show.bs.collapse', function ()
-        {
-            $('#collapseExample').collapse('hide');
-            $('#collapseLogin').collapse('hide');
-            $('#collapseSignup').collapse('hide');
-            $('#collapseNews').collapse('hide');
-            $('#collapseCall').collapse('hide');
-            $('#collapsePillars').collapse('hide');
-            $('#collapseAuth').collapse('hide');
-        }
-    )
-
-    $('#link_signup').on('show.bs.collapse', function ()
-        {
-            $('#collapseGallery').collapse('hide');
-            $('#collapseNews').collapse('hide');
-            $('#collapseCall').collapse('hide');
-            $('#collapsePillars').collapse('hide');
-            $('#collapseAuth').collapse('hide');
-        }
-    )
-
-    $('#collapseLogin').on('show.bs.collapse', function ()
-    {
-        $('#collapseSignup').collapse('hide');
-        $('#collapseNews').collapse('hide');
-        $('#collapseCall').collapse('hide');
-        $('#collapsePillars').collapse('hide');
-        $('#collapseAuth').collapse('hide');
-    });
-
-    $('#collapseSignup').on('show.bs.collapse', function ()
-    {
-        $('#collapseLogin').collapse('hide');
-        $('#collapseNews').collapse('hide');
-        $('#collapseCall').collapse('hide');
-        $('#collapsePillars').collapse('hide');
-        $('#collapseAuth').collapse('hide');
-    });
-
-
-    $('#collapseExample').on('hide.bs.collapse', function ()
-    {
-        $('#collapseLogin').collapse('hide');
-        $('#collapseSignup').collapse('hide');
-        $('#collapseNews').collapse('hide');
-        $('#collapseCall').collapse('hide');
-        $('#collapsePillars').collapse('hide');
-        $('#collapseAuth').collapse('hide');
-    });
-
-    $('#collapseExample').on('show.bs.collapse', function ()
-        {
-            $('#collapseGallery').collapse('hide');
-            $('#link_signup').collapse('hide');
-            $('#collapseNews').collapse('hide');
-            $('#collapseCall').collapse('hide');
-            $('#collapsePillars').collapse('hide');
-            $('#collapseAuth').collapse('hide');
-        }
-    );
-
-    $('#collapseNews').on('show.bs.collapse', function ()
-        {
-            $('#collapseGallery').collapse('hide');
-            $('#collapseExample').collapse('hide');
-            $('#collapseCall').collapse('hide');
-            $('#collapsePillars').collapse('hide');
-            $('#collapseAuth').collapse('hide');
-
-        }
-    );
-
-    $('#collapseCall').on('show.bs.collapse', function ()
-        {
-            $('#collapseGallery').collapse('hide');
-            $('#collapseExample').collapse('hide');
-            $('#collapseNews').collapse('hide');
-            $('#collapsePillars').collapse('hide');
-            $('#collapseAuth').collapse('hide');
-
-        }
-    );
-
-    $('#collapsePillars').on('show.bs.collapse', function ()
-        {
-            $('#collapseGallery').collapse('hide');
-            $('#collapseExample').collapse('hide');
-            $('#collapseNews').collapse('hide');
-            $('#collapseCall').collapse('hide');
-            $('#collapseAuth').collapse('hide');
-
-        }
-    );
-
-    $('#collapseAuth').on('show.bs.collapse', function ()
-        {
-            $('#collapseGallery').collapse('hide');
-            $('#collapseExample').collapse('hide');
-            $('#collapseNews').collapse('hide');
-            $('#collapseCall').collapse('hide');
-            $('#collapsePillars').collapse('hide');
-
-        }
-    );
-
-
-</script>
 
 <script src="/plugins/intl-tel-input/build/js/intlTelInput.js"></script>
 <script src="/plugins/intl-tel-input/build/js/utils.js"></script>

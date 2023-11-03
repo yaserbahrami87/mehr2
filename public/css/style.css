@@ -212,22 +212,27 @@ footer ul
 }
 
 
-footer > div.row > div
+footer > div.row> div
 {
     border-left:2px solid #2e3192;
-    height: 150px;
+    min-height: 150px;
 }
 
 
-footer > div.row > div:nth-child(3)
-{
-    display: inherit;
-    justify-content: space-between;
-}
+/*footer > div.row > div:nth-child(3)*/
+/*{*/
+/*    display: inherit;*/
+/*    justify-content: space-between;*/
+/*}*/
 
-footer > div.row > div:first-child
+footer > div.row:first-child > div:first-child
 {
     border-right:2px solid #2e3192;
+}
+
+footer > div.row:last-child div{
+    border:none;
+    min-height: auto;
 }
 
 
