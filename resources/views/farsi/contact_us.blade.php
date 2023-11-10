@@ -12,23 +12,33 @@
                     <div class="form-group">
                         <label class=" control-label" for="name">نام و نام خانوادگی: *</label>
                         <div class="">
-                            <input id="name" name="name" type="text" placeholder="نام و نام خانوادگی" class="form-control">
+                            <input id="name" name="name" type="text" placeholder="نام و نام خانوادگی" class="form-control" value="{{old('name')}}">
+                        </div>
+                    </div>
+
+                    <!-- Tel input-->
+                    <div class="form-group">
+                        <label class=" control-label" for="email">تلفن تماس:* </label>
+                        <div class="">
+                            <input id="tel" name="tel" type="number" placeholder="تلفن تماس" class="form-control" value="{{old('tel')}}">
                         </div>
                     </div>
 
                     <!-- Email input-->
                     <div class="form-group">
-                        <label class=" control-label" for="email">پست الکترونیکی: *</label>
+                        <label class=" control-label" for="email">پست الکترونیکی: </label>
                         <div class="">
-                            <input id="email" name="email" type="text" placeholder="پست الکترونیکی" class="form-control">
+                            <input id="email" name="email" type="text" placeholder="پست الکترونیکی" class="form-control" value="{{old('email')}}">
                         </div>
                     </div>
+
+
 
                     <!-- Message body -->
                     <div class="form-group">
                         <label class=" control-label" for="comment">پیام: *</label>
                         <div class="">
-                            <textarea class="form-control" id="comment" name="comment" placeholder="پیام..." rows="5"></textarea>
+                            <textarea class="form-control" id="comment" name="comment" placeholder="پیام..." rows="5">{{old('comment')}}</textarea>
                         </div>
                     </div>
 

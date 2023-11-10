@@ -11,7 +11,7 @@ class ContactUs extends Model
     use Notifiable;
 
     protected $fillable=[
-        'name','email','comment','status'
+        'name','email','comment','status','tel'
     ];
 
     public function status()

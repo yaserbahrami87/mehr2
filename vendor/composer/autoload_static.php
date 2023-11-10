@@ -522,6 +522,7 @@ class ComposerStaticInit708d0948389f848a1b066862cc6d04b4
 
     public static $classMap = array (
         'App\\Comment' => __DIR__ . '/../..' . '/app/Comment.php',
+        'App\\Console\\Commands\\ZipComepition' => __DIR__ . '/../..' . '/app/Console/Commands/ZipComepition.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\ContactUs' => __DIR__ . '/../..' . '/app/ContactUs.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',

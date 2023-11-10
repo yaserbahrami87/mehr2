@@ -19,57 +19,102 @@
             <a href="#" target="_blank" class="d-inline-block social" id="whatsapp_footer"></a>
         </div>
         -->
-        <div class="col-md-8">
+        <div class="col-md-8 slick">
+            <div>
+                <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
+                    <img src="/images/logo_maktab.png" width="100%"  />
+                </a>
+            </div>
 
-            <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
-                <img src="/images/logo_maktab.png" width="80px"  />
-            </a>
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/logo_aq.png" width="100%" />
+                </a>
+            </div>
 
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/logo_aq.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/logo_moavenat.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/آموزش-عالی-فردوس.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/اصفهان.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-بجنورد.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-بیرجند.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-سمنان.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-سوره.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-سیستان.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-شاهد.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-شهر-کرد.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-هنر.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-هنر-اسلامی-تبریز.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-کاشان.png" width="80px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/پژوهشگاه-میراث-فرهنگی.png" width="80px" />
-            </a>
+            <div >
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/logo_moavenat.png" width="100%"  />
+                </a>
+            </div>
+
+            <div >
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/آموزش-عالی-فردوس.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/اصفهان.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-بجنورد.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-بیرجند.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-سمنان.png"  width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-سوره.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-سیستان.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-شاهد.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-شهر-کرد.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-هنر.png" width="100%" />
+                </a>
+            </div>
+
+            <div >
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-هنر-اسلامی-تبریز.png" width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/دانشگاه-کاشان.png"  width="100%" />
+                </a>
+            </div>
+
+            <div>
+                <a href="https://www.aqart.ir/" target="_blank">
+                    <img src="/images/پژوهشگاه-میراث-فرهنگی.png"  width="100%" />
+                </a>
+            </div>
         </div>
 
 
@@ -85,6 +130,21 @@
 <script src="/js/bootstrap.bundle.min.js" ></script>
 
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d23eccc1-8bfc-4ee2-915d-3f1c6dc68a16";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script src="/slick/slick.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slick').slick(
+            {
+            infinite: true,
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            rtl:true,
+            arrows:false,
+    });
+    });
+</script>
 
 <script src="/plugins/intl-tel-input/build/js/intlTelInput.js"></script>
 <script src="/plugins/intl-tel-input/build/js/utils.js"></script>

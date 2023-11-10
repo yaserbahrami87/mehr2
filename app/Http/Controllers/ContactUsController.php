@@ -43,7 +43,8 @@ class ContactUsController extends Controller
 
         $this->validate($request,[
             'name'      =>'required|string|min:2',
-            'email'     =>'required|email',
+            'email'     =>'nullable|email',
+            'tel'       =>'required|ir_mobile',
             'comment'   =>'required|string|min:10',
         ]);
 

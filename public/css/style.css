@@ -668,3 +668,8 @@ footer #whatsapp_footer
 .signup_en *,.en *{
     font-family: Arial !important;
 }
+.slick >div
+{
+    background-color: #ffffff;
+    border-radius: 15px;
+}
