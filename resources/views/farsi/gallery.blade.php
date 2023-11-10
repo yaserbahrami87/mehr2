@@ -156,7 +156,7 @@
 @endsection
 
 @section('footerScript')
-    <script src="/js/jquery-3.6.4.min.js"></script>
+
     <script src="/lightbox-gallery-blurred/jquery.lightbox.js"></script>
     <script>
         $(function() {
