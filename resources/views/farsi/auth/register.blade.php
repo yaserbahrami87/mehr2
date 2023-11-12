@@ -55,10 +55,7 @@
                         <div class="form-group row" dir="">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('تلفن:') }}</label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control text-right" id="tel_"  />
-                                <input type="hidden" class="form-control" name="tel" id="tel"  />
-                                <input type="hidden" class="form-control" name="country" id="country"  />
-                                <input type="hidden" class="form-control" name="code" id="code"  />
+                                <input type="text" class="form-control text-right" id="tel_" name="tel" />
                                 @error('tel')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -144,9 +141,11 @@
 @section('footerScript')
     <script src="/js/jquery-3.6.1.min.js"></script>
     <script>
-        $("#state").change(function(){
+
+        let yas=$.noConflict();
+        yas("#state").change(function(){
            let city=$('#state').val();
-           $.ajax({
+           yas.ajax({
                type:'GET',
                url:'/state/'+city,
                success:function (data)

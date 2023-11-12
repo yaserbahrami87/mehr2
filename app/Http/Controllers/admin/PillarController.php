@@ -148,8 +148,9 @@ class PillarController extends Controller
         if($request->has('image')&&$request->file('image')->isValid())
         {
             $file=$request->file('image');
-            $image="pillar_".$request->festival_id."_".$request->fname_en.$request->lname_en.'.'.$request->file('image')->extension();
-            $image_thumbnail='thumbnail_'."pillar_".$request->festival_id."_".$request->fname_en.$request->lname_en.'.'.$request->file('image')->extension();
+            $file_name="pillar_".time().".".$request->file('image')->extension();
+            $image=$file_name;
+            $image_thumbnail='thumbnail_'.$file_name;
             $path=public_path('/images/pillars/');
             $files=$request->file('image')->move($path, $image);
             $request->image=$image;

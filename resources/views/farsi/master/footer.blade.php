@@ -146,59 +146,62 @@
     });
 </script>
 
+<!--
+
 <script src="/plugins/intl-tel-input/build/js/intlTelInput.js"></script>
 <script src="/plugins/intl-tel-input/build/js/utils.js"></script>
 <script>
-    var input = document.querySelector("#tel_");
-
-    var intl=intlTelInput(input,{
-        formatOnDisplay:false,
-        separateDialCode:true,
-        autoPlaceholder:'off',
-        preferredCountries:["ir", "gb"],
-        excludeCountries:["il"]
-    });
-
-    input.addEventListener("countrychange", function() {
-        document.querySelector("#tel").value=intl.getNumber();
-        document.querySelector("#country").value="+"+intl.getSelectedCountryData().name;
-        document.querySelector("#code").value="+"+intl.getSelectedCountryData().dialCode;
-        if(intl.getSelectedCountryData().dialCode==98)
-        {
-            document.querySelector('#states_register').setAttribute('class','form-group row');
-            document.querySelector('#cities_register').setAttribute('class','form-group row');
-        }
-        else
-        {
-            document.querySelector('#states_register').setAttribute('class','form-group row d-none');
-            document.querySelector('#cities_register').setAttribute('class','form-group row d-none');
-        }
-    });
-
-    $('#tel_').change(function()
-    {
-        document.querySelector("#tel").value=intl.getNumber();
-        document.querySelector("#country").value="+"+intl.getSelectedCountryData().name;
-        document.querySelector("#code").value="+"+intl.getSelectedCountryData().dialCode;
-
-    });
+    // var input = document.querySelector("#tel_");
+    //
+    // var intl=intlTelInput(input,{
+    //     formatOnDisplay:false,
+    //     separateDialCode:true,
+    //     autoPlaceholder:'off',
+    //     preferredCountries:["ir", "gb"],
+    //     excludeCountries:["il"]
+    // });
+    //
+    // input.addEventListener("countrychange", function() {
+    //     document.querySelector("#tel").value=intl.getNumber();
+    //     document.querySelector("#country").value="+"+intl.getSelectedCountryData().name;
+    //     document.querySelector("#code").value="+"+intl.getSelectedCountryData().dialCode;
+    //     if(intl.getSelectedCountryData().dialCode==98)
+    //     {
+    //         document.querySelector('#states_register').setAttribute('class','form-group row');
+    //         document.querySelector('#cities_register').setAttribute('class','form-group row');
+    //     }
+    //     else
+    //     {
+    //         document.querySelector('#states_register').setAttribute('class','form-group row d-none');
+    //         document.querySelector('#cities_register').setAttribute('class','form-group row d-none');
+    //     }
+    // });
+    //
+    // $('#tel_').change(function()
+    // {
+    //     document.querySelector("#tel").value=intl.getNumber();
+    //     document.querySelector("#country").value="+"+intl.getSelectedCountryData().name;
+    //     document.querySelector("#code").value="+"+intl.getSelectedCountryData().dialCode;
+    //
+    // });
 </script>
+-->
 
 <script>
-    let pass=document.querySelector('#password');
-    let show_pass=document.querySelector('#show_pass');
-    show_pass.addEventListener('click',function ()
-    {
-        if(pass.getAttribute('type')=='password')
-        {
-            pass.setAttribute('type','text')
-        }
-        else
-        {
-            pass.setAttribute('type','password')
-        }
-
-    });
+    // let pass=document.querySelector('#password');
+    // let show_pass=document.querySelector('#show_pass');
+    // show_pass.addEventListener('click',function ()
+    // {
+    //     if(pass.getAttribute('type')=='password')
+    //     {
+    //         pass.setAttribute('type','text')
+    //     }
+    //     else
+    //     {
+    //         pass.setAttribute('type','password')
+    //     }
+    //
+    // });
 
 </script>
 
