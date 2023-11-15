@@ -53,11 +53,11 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'fname'     => ['required', 'string', 'max:255'],
             'lname'     => ['required', 'string', 'max:255'],
-            'email'     => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'email'     => ['nullable', 'string', 'email', 'max:255', 'unique:users'],
             'password'  => ['required', 'string', 'min:8', 'confirmed'],
-            'tel'       => ['required', 'string', 'min:8'],
-            'country'   => ['required', 'string' ],
-            'code'      => ['required', 'string' ],
+            'tel'       => ['nullable', 'string', 'min:8'],
+            'education' => ['required', 'numeric', 'between:1,5'],
+            'field_study' => ['required', 'string', 'min:3'],
             'state_id'  =>'required_if:code,+98','numeric',
             'city_id'   =>'required_if:code,+98','numeric',
         ]);
@@ -89,11 +89,13 @@ class RegisterController extends Controller
             'lname'     => $data['lname'],
             'email'     => $data['email'],
             'tel'       => $data['tel'],
-            'country'   => $data['country'],
-            'code'      => $data['code'],
+//            'country'   => $data['country'],
+//            'code'      => $data['code'],
             'password'  => Hash::make($data['password']),
             'state_id'  => $data['state_id'],
             'city_id'   => $data['city_id'],
+            'education'   => $data['education'],
+            'field_study'   => $data['field_study'],
         ]);
     }
 }

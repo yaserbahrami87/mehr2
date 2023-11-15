@@ -73,7 +73,7 @@
         img.zoom {
             width: 100%;
             height: 200px;
-            border-radius:5px;
+            border-radius:30px;
             object-fit:cover;
             -webkit-transition: all .3s ease-in-out;
             -moz-transition: all .3s ease-in-out;
@@ -156,7 +156,7 @@
 @endsection
 
 @section('footerScript')
-
+    <script src="/js/jquery-3.6.4.min.js"></script>
     <script src="/lightbox-gallery-blurred/jquery.lightbox.js"></script>
     <script>
         $(function() {

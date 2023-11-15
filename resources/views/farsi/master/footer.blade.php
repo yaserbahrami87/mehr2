@@ -19,102 +19,21 @@
             <a href="#" target="_blank" class="d-inline-block social" id="whatsapp_footer"></a>
         </div>
         -->
-        <div class="col-md-8 slick">
-            <div>
-                <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
-                    <img src="/images/logo_maktab.png" width="100%"  />
-                </a>
-            </div>
+        <div class="col-md-8 text-center">
+            <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
+                <img src="/images/logo_maktab.png" width="125px"  />
+            </a>
 
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/logo_aq.png" width="100%" />
-                </a>
-            </div>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/logo_aq.png" width="125px" />
+            </a>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/logo_moavenat.png" width="125px" />
+            </a>
 
-            <div >
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/logo_moavenat.png" width="100%"  />
-                </a>
-            </div>
-
-            <div >
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/آموزش-عالی-فردوس.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/اصفهان.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-بجنورد.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-بیرجند.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-سمنان.png"  width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-سوره.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-سیستان.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-شاهد.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-شهر-کرد.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-هنر.png" width="100%" />
-                </a>
-            </div>
-
-            <div >
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-هنر-اسلامی-تبریز.png" width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/دانشگاه-کاشان.png"  width="100%" />
-                </a>
-            </div>
-
-            <div>
-                <a href="https://www.aqart.ir/" target="_blank">
-                    <img src="/images/پژوهشگاه-میراث-فرهنگی.png"  width="100%" />
-                </a>
-            </div>
+            <a href="https://www.aqart.ir/" target="_blank">
+                <img src="/images/دانشگاه-هنر.png" width="125px" />
+            </a>
         </div>
 
 
@@ -136,8 +55,8 @@
         $('.slick').slick(
             {
             infinite: true,
-            slidesToShow: 6,
-            slidesToScroll: 6,
+            slidesToShow: 8,
+            slidesToScroll: 8,
             autoplay: true,
             autoplaySpeed: 2000,
             rtl:true,

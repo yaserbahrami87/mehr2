@@ -270,6 +270,79 @@
                     </button>
                 </div>
             </div>
+            <div class="col-12 slick">
+                <div >
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/آموزش-عالی-فردوس.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/اصفهان.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-بجنورد.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-بیرجند.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-سمنان.png"  width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-سوره.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-سیستان.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-شاهد.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-شهر-کرد.png" width="100%" />
+                    </a>
+                </div>
+
+                <div >
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-هنر-اسلامی-تبریز.png" width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-کاشان.png"  width="100%" />
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/پژوهشگاه-میراث-فرهنگی.png"  width="100%" />
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

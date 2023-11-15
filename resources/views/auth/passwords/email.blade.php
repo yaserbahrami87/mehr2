@@ -52,8 +52,8 @@
     <div class="container mb-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">{{ __('بازگردانی رمز') }}</div>
+                <div class="card bg-transparent  border-light text-light">
+                    <div class="card-header  bg-transparent  border-light text-light">{{ __('بازگردانی رمز') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))

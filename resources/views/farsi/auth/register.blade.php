@@ -4,8 +4,8 @@
 <div class="container mb-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('ثبت نام') }}</div>
+            <div class="card bg-transparent border-light text-light">
+                <div class="card-header  border-light text-light">{{ __('ثبت نام') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -63,6 +63,38 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="form-group row" id="states_register">
+                            <label for="state" class="col-md-4 col-form-label text-md-right">{{ __('مقطع تحصیلی:') }}</label>
+                            <div class="col-md-6">
+                                <select class="form-control" id="education" name="education">
+                                    <option disabled selected>انتخاب کنید</option>
+                                    <option value="1">دیپلم</option>
+                                    <option value="2">فوق دیپلم</option>
+                                    <option value="3">لیسانس</option>
+                                    <option value="4">فوق لیسانس</option>
+                                    <option value="5">دکتری</option>
+                                </select>
+                                @error('education')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('رشته تحصیلی:') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="field_study" type="text" class="form-control @error('field_study') is-invalid @enderror" name="field_study" value="{{ old('field_study') }}" required autocomplete="field_study">
+
+                                @error('field_study')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
                         <div class="form-group row" id="states_register">
                             <label for="state" class="col-md-4 col-form-label text-md-right">{{ __('استان:') }}</label>
                             <div class="col-md-6">
