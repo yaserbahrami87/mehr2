@@ -673,3 +673,9 @@ footer #whatsapp_footer
     background-color: #ffffff;
     border-radius: 15px;
 }
+
+.navbar-brand img
+{
+    background-color:#ffffff;
+    border-radius: 25px;
+}

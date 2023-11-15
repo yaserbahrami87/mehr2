@@ -1,4 +1,4 @@
-@extends('farsi.master.index')
+@extends('user_fa.master.index')
 
 @section('headerScript')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -54,12 +54,13 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12 mb-5 mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <h5 class="card-header">ارسال اثر</h5>
+                    <div class="card-body">
 
-                <div class="alert alert-warning">
-                    زمان برای ارسال اثرات موقتا قطع می باشد
+                    </div>
                 </div>
-
             </div>
         </div>
     </div>

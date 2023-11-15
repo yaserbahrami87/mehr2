@@ -49,14 +49,7 @@
                             </p>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/panel/english" class="nav-link">
-                            <i class="nav-icon fas fa-media"></i>
-                            <p>
-                                English
-                            </p>
-                        </a>
-                    </li>
+
                     <li class="nav-item">
                         <a href="/panel/competiton" class="nav-link">
                             <i class="nav-icon fa fa-album"></i>
