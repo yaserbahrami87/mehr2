@@ -54,6 +54,12 @@
                                     <p>تعریف جشنواره</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="/admin/competiton_category" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>دسته بندی جشنواره</p>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item has-treeview">

@@ -34,6 +34,8 @@ Route::get('/competiton/{festival}/{competiton_category}','CompetitonController@
 Route::get('/competiton/{festival}/{competiton_category}/download','CompetitonController@download');
 Route::resource('competiton','CompetitonController');
 
+//competiton_categories
+Route::resource('competiton_category','CompetitonCategoryController');
 
 Route::get('/panel','AdminController@index');
 

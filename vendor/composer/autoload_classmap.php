@@ -42,6 +42,7 @@ return array(
     'App\\Http\\Controllers\\StateController' => $baseDir . '/app/Http/Controllers/StateController.php',
     'App\\Http\\Controllers\\admin\\AdminController' => $baseDir . '/app/Http/Controllers/admin/AdminController.php',
     'App\\Http\\Controllers\\admin\\CommentController' => $baseDir . '/app/Http/Controllers/admin/CommentController.php',
+    'App\\Http\\Controllers\\admin\\CompetitonCategoryController' => $baseDir . '/app/Http/Controllers/admin/CompetitonCategoryController.php',
     'App\\Http\\Controllers\\admin\\CompetitonController' => $baseDir . '/app/Http/Controllers/admin/CompetitonController.php',
     'App\\Http\\Controllers\\admin\\ContactUsController' => $baseDir . '/app/Http/Controllers/admin/ContactUsController.php',
     'App\\Http\\Controllers\\admin\\FestivalController' => $baseDir . '/app/Http/Controllers/admin/FestivalController.php',

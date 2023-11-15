@@ -557,6 +557,7 @@ class ComposerStaticInit708d0948389f848a1b066862cc6d04b4
         'App\\Http\\Controllers\\StateController' => __DIR__ . '/../..' . '/app/Http/Controllers/StateController.php',
         'App\\Http\\Controllers\\admin\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/AdminController.php',
         'App\\Http\\Controllers\\admin\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/CommentController.php',
+        'App\\Http\\Controllers\\admin\\CompetitonCategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/CompetitonCategoryController.php',
         'App\\Http\\Controllers\\admin\\CompetitonController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/CompetitonController.php',
         'App\\Http\\Controllers\\admin\\ContactUsController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/ContactUsController.php',
         'App\\Http\\Controllers\\admin\\FestivalController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/FestivalController.php',
