@@ -35,5 +35,10 @@ class festival extends Model
         return $this->hasMany('App\RequestLink','festival_id','id');
     }
 
+    public function competition_categories()
+    {
+        return $this->hasMany('competiton_category','festival_id','id');
+    }
+
 
 }

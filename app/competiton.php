@@ -8,7 +8,7 @@ class competiton extends Model
 {
 
     protected $fillable=[
-        'user_id','image','competiton_category_id','description','name_place','location','date_fa','time_fa','status','festival_id'
+        'user_id','image','competiton_category_id','description','image2','image3','date_fa','time_fa','status','festival_id','image4','image5','image6','title','material_id'
     ];
 
     public function user()

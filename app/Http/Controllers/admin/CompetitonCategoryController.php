@@ -33,7 +33,11 @@ class CompetitonCategoryController extends Controller
     public function create()
     {
         $festival=festival::latest()->first();
+        $competiton_categories=competiton_category::whereNull('child')
+                            ->get();
+
         return view('admin.competition_category.competition_category_insert')
+                    ->with('competiton_categories',$competiton_categories)
                     ->with('festival',$festival);
 
     }
@@ -46,7 +50,25 @@ class CompetitonCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        $this->validate($request,[
+           "category_fa"    =>'required|string',
+           'child'          =>'nullable|numeric',
+           'festival_id'    =>'required|numeric',
+            'status'        =>'required|boolean',
+        ]);
+
+        $competiton_categories=competiton_category::create($request->all());
+        if($competiton_categories)
+        {
+            alert()->success('دسته بندی با موفقیت اضافه شد')->persistent('بستن');
+        }
+        else
+        {
+            alert()->error('خطا در اضافه کردن دسته بندی ')->persistent('بستن');
+        }
+
+        return back();
     }
 
     /**
@@ -57,7 +79,7 @@ class CompetitonCategoryController extends Controller
      */
     public function show(competiton_category $competiton_category)
     {
-        //
+
     }
 
     /**
@@ -68,7 +90,14 @@ class CompetitonCategoryController extends Controller
      */
     public function edit(competiton_category $competiton_category)
     {
-        //
+        $festival=festival::latest()->first();
+        $competiton_categories=competiton_category::whereNull('child')
+                                ->get();
+
+        return view('admin.competition_category.competition_category_edit')
+            ->with('competiton_categories',$competiton_categories)
+            ->with('competiton_category',$competiton_category)
+            ->with('festival',$festival);
     }
 
     /**
@@ -80,7 +109,25 @@ class CompetitonCategoryController extends Controller
      */
     public function update(Request $request, competiton_category $competiton_category)
     {
-        //
+        $this->validate($request,[
+            "category_fa"    =>'required|string',
+            'child'          =>'nullable|numeric',
+            'festival_id'    =>'required|numeric',
+            'status'        =>'required|boolean',
+        ]);
+
+        $status=$competiton_category->update($request->all());
+
+        if($status)
+        {
+            alert()->success('دسته بندی با موفقیت اضافه شد')->persistent('بستن');
+        }
+        else
+        {
+            alert()->error('خطا در اضافه کردن دسته بندی ')->persistent('بستن');
+        }
+
+        return back();
     }
 
     /**

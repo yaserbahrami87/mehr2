@@ -1,4 +1,4 @@
-@extends('farsi.master.index')
+@extends('user_fa.master.index')
 
 @section('headerScript')
     <style>
@@ -55,7 +55,71 @@
     <div class="row">
         <div class="col-12 col-md-3  mx-auto mb-b ">
             <div class="card col-12 mb-3 upload_pictures bg-transparent" >
-                <h3 class="text-muted text-center pb-3">ویرایش محتوی عکس</h3>
+                <h3 class="text-muted text-center pb-3">ویرایش اثر</h3>
+                <form method="post" action="/panel/competiton/{{$competiton->id}}" enctype="multipart/form-data">
+                    {{csrf_field()}}
+                    {{method_field('PATCH')}}
+                    <img src="/images/competition/{{$competiton->image}}" class="img-fluid mb-3" />
+                    <div class="form-group">
+                        <label for="title"> نام اثر:<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="title" name="title" value="{{old('title',$competiton->title)}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">توضیحات</label>
+                        <textarea class="form-control" id="description" name="description" rows="3">{{old('description',$competiton->description)}}</textarea>
+                    </div>
+                    <!--
+                    <div class="form-group">
+                        <label for="image"> عکس اصلی<span class="text-danger">*</span></label>
+                        <input type="file" class="form-control-file" id="image" name="image" value="{{old('image')}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="image2"> عکس دوم<span class="text-danger">*</span></label>
+                        <input type="file" class="form-control-file" id="image2" name="image2">
+                    </div>
+                    <div class="form-group">
+                        <label for="image3"> عکس سوم</label>
+                        <input type="file" class="form-control-file" id="image3" name="image3">
+                    </div>
+                    <div class="form-group">
+                        <label for="image4"> عکس چهارم</label>
+                        <input type="file" class="form-control-file" id="image4" name="image4">
+                    </div>
+                    <div class="form-group">
+                        <label for="image5"> عکس پنجم</label>
+                        <input type="file" class="form-control-file" id="image5" name="image5">
+                    </div>
+                    <div class="form-group">
+                        <label for="image6"> عکس ششم</label>
+                        <input type="file" class="form-control-file" id="image6" name="image6">
+                    </div>
+                    -->
+                    <div class="form-group">
+                        <label for="competiton_category_id">دسته بندی<span class="text-danger">*</span></label>
+                        <select class="form-control" id="competiton_category_id" name="competiton_category_id">
+                            <option disabled selected>انتخاب کنید</option>
+                            @foreach($competiton_category as $item)
+                                <option value="{{$item->id}}" @if(old('competiton_category_id',$competiton->competiton_category_id)==$item->id) selected @endif >{{$item->category_fa}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="material_id">متریال اثر <span class="text-danger">*</span></label>
+                        <select class="form-control" id="material_id" name="material_id">
+                            <option disabled selected>انتخاب کنید</option>
+                            @foreach($materials as $material)
+                                <option value="{{$material->id}}" @if(old('material_id',$competiton->material_id)==$material->id) selected @endif >{{$material->material}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <input type="submit" value="بروزرسانی اثر" class="btn btn-success">
+                </form>
+
+
+
+                {{--
                 <form class="form" method="post" action="/panel/competiton/{{$competiton->id}}" enctype="multipart/form-data">
                     {{csrf_field()}}
                     {{method_field('PATCH')}}
@@ -88,6 +152,7 @@
                         </div>
                     </div>
                 </form>
+                --}}
             </div>
 
         </div>

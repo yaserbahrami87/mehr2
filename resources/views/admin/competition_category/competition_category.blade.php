@@ -12,14 +12,21 @@
                             <th>دسته بندی</th>
                             <th>جشنواره</th>
                             <th>ویرایش</th>
-                            <th>حذف</th>
+
                         </tr>
                             @foreach($competiton_categories as $competiton_category)
-                                 <td>{{$loop->iteration}}</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
+                                <tr>
+                                    <td>{{$loop->iteration}}</td>
+                                    <td>{{$competiton_category->category_fa}}</td>
+
+                                    <td>{{$competiton_category->festival->festival_fa}}</td>
+                                    <td>
+                                        <a href="/admin/competiton_category/{{$competiton_category->id}}/edit" class="btn btn-warning">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                    </td>
+
+                                </tr>
                             @endforeach
 
                         <tr></tr>
