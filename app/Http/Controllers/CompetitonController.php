@@ -59,9 +59,10 @@ class CompetitonController extends BaseController
 
         $this->validate($request,
         [
-           'title'                    =>'required|string|max:200|min:5',
+           'title'                    =>'required|string|max:200|',
            'description'              =>'required|string|max:200|min:5',
            'competiton_category_id'   =>'required|numeric',
+           'competiton_category_child'=>'required|numeric',
            'material_id'              =>'required|numeric',
             'image'                   =>'required|mimes:jpg,jpeg|max:1024',
             'image2'                   =>'required|mimes:jpg,jpeg|max:1024',
@@ -79,6 +80,7 @@ class CompetitonController extends BaseController
             'date_fa'                =>$this->dateNow,
             'time_fa'                =>$this->timeNow,
             'competiton_category_id' =>$request['competiton_category_id'],
+            'competiton_category_child' =>$request['competiton_category_child'],
             'user_id'                =>Auth::user()->id,
             'festival_id'            =>$festival->id,
         ]);
@@ -252,16 +254,17 @@ class CompetitonController extends BaseController
 
         $this->validate($request,
             [
-                'title'                    =>'required|string|max:200|min:5',
+                'title'                    =>'required|string|max:200|',
                 'description'              =>'required|string|max:200|min:5',
                 'competiton_category_id'   =>'required|numeric',
+                'competiton_category_child'   =>'required|numeric',
                 'material_id'              =>'required|numeric',
-                'image'                   =>'required|mimes:jpg,jpeg|max:1024',
-                'image2'                   =>'required|mimes:jpg,jpeg|max:1024',
-                'image3'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-                'image4'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-                'image5'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-                'image6'                   =>'nullable|mimes:jpg,jpeg|max:1024',
+//                'image'                   =>'required|mimes:jpg,jpeg|max:1024',
+//                'image2'                   =>'required|mimes:jpg,jpeg|max:1024',
+//                'image3'                   =>'nullable|mimes:jpg,jpeg|max:1024',
+//                'image4'                   =>'nullable|mimes:jpg,jpeg|max:1024',
+//                'image5'                   =>'nullable|mimes:jpg,jpeg|max:1024',
+//                'image6'                   =>'nullable|mimes:jpg,jpeg|max:1024',
             ]);
 
         $status=$competiton->update($request->all());

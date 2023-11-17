@@ -37,6 +37,9 @@ Route::resource('competiton','CompetitonController');
 //competiton_categories
 Route::resource('competiton_category','CompetitonCategoryController');
 
+//Material
+Route::resource('material','MaterialController');
+
 Route::get('/panel','AdminController@index');
 
 

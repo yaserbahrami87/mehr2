@@ -60,6 +60,12 @@
                                     <p>دسته بندی جشنواره</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="/admin/material" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>متریال جشنواره</p>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item has-treeview">

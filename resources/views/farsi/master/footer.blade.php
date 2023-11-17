@@ -55,8 +55,8 @@
         $('.slick').slick(
             {
             infinite: true,
-            slidesToShow: 8,
-            slidesToScroll: 8,
+            slidesToShow: 9,
+            slidesToScroll: 9,
             autoplay: true,
             autoplaySpeed: 2000,
             rtl:true,

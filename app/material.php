@@ -9,4 +9,16 @@ class material extends Model
     protected $fillable=[
         'material','status',
     ];
+
+    public function status()
+    {
+        switch ($this->status)
+        {
+            case 1:return "فعال";
+                    break;
+            case 0:return "غیرفعال";
+                    break;
+            default:return "خطا";
+        }
+    }
 }

@@ -46,7 +46,9 @@ class CompetitonCategoryController extends Controller
      */
     public function show(competiton_category $competiton_category)
     {
-        //
+        $child=competiton_category::where('child','=',$competiton_category->id)
+                                    ->get();
+        return $child;
     }
 
     /**

@@ -77,7 +77,7 @@
         <!-- /.row -->
         <!-- Main row -->
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" id="show_errors">
                 @if($errors->any())
                     @foreach($errors->all() as $error)
                         <div class="alert alert-danger">{{$error}}</div>

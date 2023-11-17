@@ -5,6 +5,8 @@ Route::get('/','HomeController@index');
 //competition
 Route::resource('competiton','CompetitonController');
 
+Route::get('/competition_category/{competiton_category}','CompetitonCategoryController@show');
+
 //Request Link
 Route::resource('RequestLink','RequestLinkController');
 

@@ -49,6 +49,7 @@ return array(
     'App\\Http\\Controllers\\admin\\FestivalController' => $baseDir . '/app/Http/Controllers/admin/FestivalController.php',
     'App\\Http\\Controllers\\admin\\GalleryCategoryController' => $baseDir . '/app/Http/Controllers/admin/GalleryCategoryController.php',
     'App\\Http\\Controllers\\admin\\GalleryController' => $baseDir . '/app/Http/Controllers/admin/GalleryController.php',
+    'App\\Http\\Controllers\\admin\\MaterialController' => $baseDir . '/app/Http/Controllers/admin/MaterialController.php',
     'App\\Http\\Controllers\\admin\\NewsController' => $baseDir . '/app/Http/Controllers/admin/NewsController.php',
     'App\\Http\\Controllers\\admin\\PillarController' => $baseDir . '/app/Http/Controllers/admin/PillarController.php',
     'App\\Http\\Controllers\\admin\\RequestLinkController' => $baseDir . '/app/Http/Controllers/admin/RequestLinkController.php',

@@ -564,6 +564,7 @@ class ComposerStaticInit708d0948389f848a1b066862cc6d04b4
         'App\\Http\\Controllers\\admin\\FestivalController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/FestivalController.php',
         'App\\Http\\Controllers\\admin\\GalleryCategoryController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/GalleryCategoryController.php',
         'App\\Http\\Controllers\\admin\\GalleryController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/GalleryController.php',
+        'App\\Http\\Controllers\\admin\\MaterialController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/MaterialController.php',
         'App\\Http\\Controllers\\admin\\NewsController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/NewsController.php',
         'App\\Http\\Controllers\\admin\\PillarController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/PillarController.php',
         'App\\Http\\Controllers\\admin\\RequestLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/admin/RequestLinkController.php',

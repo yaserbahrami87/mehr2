@@ -102,6 +102,14 @@
                                 </select>
                             </div>
 
+                            <div class="form-group" id="div_competiton_category_id">
+                                <label for="competiton_category_id">زیرمجموعه:<span class="text-danger">*</span></label>
+                                <select class="form-control" id="competiton_category_id" name="competiton_category_id">
+                                    <option disabled selected>انتخاب کنید</option>
+
+                                </select>
+                            </div>
+
                             <div class="form-group">
                                 <label for="material_id">متریال اثر <span class="text-danger">*</span></label>
                                 <select class="form-control" id="material_id" name="material_id">
@@ -119,4 +127,68 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('footerScript')
+<script>
+    $("#competiton_category_id").change(function()
+    {
+        let competiton_category_id=document.querySelector('#competiton_category_id').value;
+        users="<label for=\"competiton_category_child\">زیرمجموعه را انتخاب کنید <span class=\"text-danger text-bold\">*</span></label>" +
+            "<select class=\"form-control\" id=\"competiton_category_child\" name='competiton_category_child'>" +
+            "<option selected disabled>انتخاب کنید</option></select>";
+
+        $('#div_competiton_category_id').html(users);
+
+        $.ajax(
+            {
+                type:'get',
+                url:'/panel/competition_category/'+competiton_category_id,
+                success:function(data)
+                {
+                    if(data.length==0)
+                    {
+                        errorsHtml='<div class="alert alert-danger text-left"><ul><li>موردی یافت نشد</li></ul></div>';
+                        $('#show_errors').html( errorsHtml );
+                    }
+                    else
+                    {
+
+                        for (i=0;i<data.length;i++)
+                        {
+                            users="<label for=\"competiton_category_child\">زیرمجموعه را انتخاب کنید <span class=\"text-danger text-bold\">*</span></label>" +
+                                "<select class=\"form-control\" id=\"competiton_category_child\" name='competiton_category_child'>" +
+                                "<option selected disabled>انتخاب کنید</option>";
+                            $.each( data, function( key, value ) {
+
+                                users += ''+
+                                    '<option value="'+value.id+'">'+
+                                    value.category_fa+
+                                    '</option>';
+                            });
+                            users=users+"</select>"
+                        }
+                        $('#div_competiton_category_id').html(users);
+
+                    }
+
+
+                },
+                error : function(data)
+                {
+                    $('#result_reserve').text(data.responseJSON.errors);
+                    console.log(data.responseJSON.errors);
+                    errorsHtml='<div class="alert alert-danger text-left"><ul>';
+                    $.each( data.responseJSON.errors, function( key, value ) {
+                        errorsHtml += '<li>'+ value[0] + '</li>'; //showing only the first error.
+                    });
+                    errorsHtml += '</ul></div>';
+
+                    $( '#result_reserve' ).html( errorsHtml );
+                }
+
+            }
+        );
+    });
+</script>
 @endsection
