@@ -64,12 +64,12 @@ class CompetitonController extends BaseController
            'competiton_category_id'   =>'required|numeric',
            'competiton_category_child'=>'required|numeric',
            'material_id'              =>'required|numeric',
-            'image'                   =>'required|mimes:jpg,jpeg|max:1024',
-            'image2'                   =>'required|mimes:jpg,jpeg|max:1024',
-            'image3'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-            'image4'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-            'image5'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-            'image6'                   =>'nullable|mimes:jpg,jpeg|max:1024',
+            'image'                   =>'required|mimes:jpg,jpeg|max:2048',
+            'image2'                   =>'required|mimes:jpg,jpeg|max:2048',
+            'image3'                   =>'nullable|mimes:jpg,jpeg|max:2048',
+            'image4'                   =>'nullable|mimes:jpg,jpeg|max:2048',
+            'image5'                   =>'nullable|mimes:jpg,jpeg|max:2048',
+            'image6'                   =>'nullable|mimes:jpg,jpeg|max:2048',
         ]);
 
         $festival=festival::latest()->first();
