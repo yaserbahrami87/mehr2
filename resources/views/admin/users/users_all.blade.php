@@ -33,8 +33,6 @@
                 <th>شهرستان</th>
                 <th>تاریخ ثبت نام</th>
                 <th>تعداد عکس ارسالی</th>
-                <th>مزارات</th>
-                <th>نیایش</th>
                 <th>مشاهده</th>
             </thead>
             <tbody>
@@ -56,8 +54,7 @@
                     <td dir="ltr"> {{$user->city['name']}}</td>
                     <td class="text-center">{{$user->created_at}}</td>
                     <td class="text-center">{{$user->competitions->where('festival_id','=',$festival->id)->count()}}</td>
-                    <td class="text-center">{{($user->competitions->where('festival_id','=',$festival->id)->where('competiton_category_id','=','1')->count())}}</td>
-                    <td class="text-center">{{($user->competitions->where('festival_id','=',$festival->id)->where('competiton_category_id','=','2')->count())}}</td>
+
                     <td>
                         <a href="/admin/user/{{$user->id}}" class="btn btn-warning">
                             <i class="bi bi-eye-fill"></i>
