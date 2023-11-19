@@ -32,7 +32,7 @@
 
                 <nav class="col-12 navbar navbar-expand-lg navbar-light bg-transparent mb-5">
                     <a class="navbar-brand" href="#">
-                        <img src="/images/logo_small.png" class="img-fluid" />
+                        <img src="/images/golden_logo.png" class="img-fluid" />
                     </a>
 
                     <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarVerticalContent" aria-controls="navbarVerticalContent" aria-expanded="false" aria-label="Toggle navigation">
