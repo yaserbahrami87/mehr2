@@ -4,7 +4,7 @@
     </div>
     <div class="row pt-4  mb-3">
 
-        <div class="col-md-4">
+        <div class="col-md-6">
             <b class="d-block">ارتباط با ما</b>
             <p class="m-0 text-justify">مشـهـد مقدس. خیـابـان کـوهـسنـگی 11. عـدالـت 18. پـلاک 9
                 مـوسســــه آفــرینـش‌هــــای هـنـــــری آستـــــان قــــدس رضــــــوی</p>
@@ -19,16 +19,13 @@
             <a href="#" target="_blank" class="d-inline-block social" id="whatsapp_footer"></a>
         </div>
         -->
-        <div class="col-md-8 text-center">
+        <div class="col-md-6 text-center">
             <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
                 <img src="/images/logo_maktab.png" width="125px"  />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
                 <img src="/images/logo_aq.png" width="125px" />
-            </a>
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/logo_moavenat.png" width="125px" />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
@@ -61,6 +58,34 @@
             autoplaySpeed: 2000,
             rtl:true,
             arrows:false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 9,
+                        slidesToScroll: 9,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 6,
+                        slidesToScroll: 6
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 5
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
     });
     });
 </script>
