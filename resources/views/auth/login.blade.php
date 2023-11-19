@@ -68,10 +68,10 @@
     <div class="container mb-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
+                <div class="card bg-transparent border border-light text-light">
                     <div class="card-header">{{ __('ورود') }}</div>
 
-                    <div class="card-body">
+                    <div class="card-body border border-light text-light">
                         <form method="POST" action="{{ route('login') }}">
                             {{csrf_field()}}
 
