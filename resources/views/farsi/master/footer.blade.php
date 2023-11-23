@@ -9,7 +9,7 @@
 
             <p class="m-0 text-justify">مشـهـد مقدس. خیـابـان کـوهـسنـگی 17. پـلاک 14
                 مــکتـب هــــنر رضـــوان</p>
-            <a href="tel:05138423575" class="mr-3">05138423575</a>
+            <a href="tel:05138467644" class="mr-3">05138467644</a>
             <a href="mailto:info@mehrfestivart.ir" class="d-block">info@mehrfestivart.ir</a>
         </div>
         <!--
