@@ -6,10 +6,11 @@
 
         <div class="col-md-6">
             <b class="d-block">ارتباط با ما</b>
-            <p class="m-0 text-justify">مشـهـد مقدس. خیـابـان کـوهـسنـگی 11. عـدالـت 18. پـلاک 9
-                مـوسســــه آفــرینـش‌هــــای هـنـــــری آستـــــان قــــدس رضــــــوی</p>
-            <a href="tel:09390482732" class="mr-3">09390482732</a>
-            <a href="mailto:info@mazaar.net" class="d-block">info@mazaar.net</a>
+
+            <p class="m-0 text-justify">مشـهـد مقدس. خیـابـان کـوهـسنـگی 17. پـلاک 14
+                مــکتـب هــــنر رضـــوان</p>
+            <a href="tel:05138423575" class="mr-3">05138423575</a>
+            <a href="mailto:info@mehrfestivart.ir" class="d-block">info@mehrfestivart.ir</a>
         </div>
         <!--
         <div class="col-md-3 align-items-center text-center p-0 d-flex justify-content-around">
@@ -45,7 +46,9 @@
 <script src="/js/jquery.slim.min.js" ></script>
 <script src="/js/bootstrap.bundle.min.js" ></script>
 
+<!--
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d23eccc1-8bfc-4ee2-915d-3f1c6dc68a16";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+-->
 <script src="/slick/slick.js"></script>
 <script>
     $(document).ready(function(){
