@@ -2,11 +2,11 @@
 
 @section('content')
     <div class="col-12 text-center text-light mb-3">
-        <img src="/images/logo_aq.png" width="200px" class="mb-3" />
+        <img src="/images/logo_aq_gold.png" width="200px" class="mb-3" />
         <h3>راه های ارتباطی:</h3>
-        <p class="text-light">مشـهـد مقدس. خیـابـان کـوهـسنـگی 11. عـدالـت 18. پـلاک 9 مـوسســــه آفــرینـش‌هــــای هـنـــــری آستـــــان قــــدس رضــــــوی</p>
-        <a href="tel:09390482732" class="mr-3">09390482732</a>
-        <a href="mailto:info@mazaar.net" class="d-block">info@mazaar.net</a>
+        <p class="text-light">مشـهـد مقدس. خـیـــابـــان کــوهـســنــگی 17. پـلاک 14 . مکــــتــب هنــــر رضــــــوان</p>
+        <a href="tel:05138467644" class="mr-3">05138467644</a>
+        <a href="mailto:info@mehrfestivart.ir" class="d-block">info@mehrfestivart.ir</a>
     </div>
     <div class="col-md-6 mx-auto bg-transparent text-light mb-5 p-3" >
         <div class="well well-sm ">

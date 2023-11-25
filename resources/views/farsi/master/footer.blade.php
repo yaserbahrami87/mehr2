@@ -22,15 +22,15 @@
         -->
         <div class="col-md-6 text-center">
             <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
-                <img src="/images/logo_maktab.png" width="125px"  />
+                <img src="/images/logo_maktab_gold.png" width="125px"  />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/logo_aq.png" width="125px" />
+                <img src="/images/logo_aq_gold.png" width="125px" />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-هنر.png" width="125px" />
+                <img src="/images/دانشگاه-هنر-طلایی.png" width="125px" />
             </a>
         </div>
 
