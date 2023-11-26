@@ -89,7 +89,7 @@ class GalleryCategoryController extends Controller
      */
     public function update(Request $request, gallery_category $gallery_category)
     {
-
+        
         $this->validate($request,[
             'category_fa'    =>'required|string|max:100|unique:gallery_categories,category_fa,'.$gallery_category->id,
             'status'         =>'required|boolean',

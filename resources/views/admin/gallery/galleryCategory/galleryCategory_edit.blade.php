@@ -5,7 +5,7 @@
             <h5 class="card-header">ایجاد دسته بندی</h5>
             <div class="card-body">
 
-                <form method="post" action="/admin/gallery_category/{{$gallery_category->category_en}}" enctype="multipart/form-data">
+                <form method="post" action="/admin/gallery_category/{{$gallery_category->category_fa}}" >
                     {{csrf_field()}}
                     {{method_field('PATCH')}}
                     <div class="tab-content" id="nav-tabContent">
