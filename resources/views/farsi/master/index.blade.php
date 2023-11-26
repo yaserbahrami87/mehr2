@@ -44,34 +44,28 @@
                                 <a class="nav-link text-light" href="/farsi/home">خانه</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link text-light" href="/farsi/call" >
                                     فراخوان
                                 </a>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="/farsi/call">نمایش متن فراخوان</a>
-                                </div>
+
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link  text-light" href="/farsi/gallery/{{$festival->festival_fa}}" >
                                     گالری
                                 </a>
+                                {{--
                                 <div class="dropdown-menu">
                                     @foreach($festivals as $festival)
                                             <a class="dropdown-item" href="/farsi/gallery/{{$festival->festival_fa}}">{{$festival->festival_fa}}</a>
                                     @endforeach
                                 </div>
+                                --}}
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link text-light" href="/farsi/pillars/{{$festival->festival_fa}}" >
                                     ارکان جشنواره
                                 </a>
-                                <div class="dropdown-menu">
-                                    @foreach($festivals as $festival)
-                                        <a class="dropdown-item" href="/farsi/pillars/{{$festival->festival_fa}}">{{$festival->festival_fa}}</a>
-                                    @endforeach
-
-                                </div>
                             </li>
                             @guest
                                 <li class="nav-item active">
@@ -107,15 +101,9 @@
 
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link text-light" href="/farsi/news/{{$festival->festival_fa}}"   >
                                     اخبار
                                 </a>
-                                <div class="dropdown-menu">
-                                    @foreach($festivals as $festival)
-                                        <a class="dropdown-item" href="/farsi/news/{{$festival->festival_fa}}">{{$festival->festival_fa}}</a>
-                                    @endforeach
-
-                                </div>
                             </li>
 
                             <li class="nav-item">
