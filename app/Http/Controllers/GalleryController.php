@@ -49,7 +49,7 @@ class GalleryController extends Controller
     {
 
         $galleries=gallery::where('festival_id','=',$festival->id)
-                            ->paginate(12);
+                            ->paginate(20);
 
         return view('farsi.gallery')
                         ->with('galleries',$galleries)

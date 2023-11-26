@@ -4,7 +4,7 @@
     </div>
     <div class="row pt-4  mb-3">
 
-        <div class="col-md-6">
+        <div class="col-md-8">
             <b class="d-block">ارتباط با ما</b>
 
             <p class="m-0 text-justify">مشـهـد مقدس. خیـابـان کـوهـسنـگی 17. پـلاک 14
@@ -20,17 +20,17 @@
             <a href="#" target="_blank" class="d-inline-block social" id="whatsapp_footer"></a>
         </div>
         -->
-        <div class="col-md-6 text-center">
+        <div class="col-md-4 text-center">
             <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
-                <img src="/images/logo_maktab_gold.png" width="125px"  />
+                <img src="/images/logo_maktab_gold.png" width="100px"  />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/logo_aq_gold.png" width="125px" />
+                <img src="/images/logo_aq_gold.png" width="100px" />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/دانشگاه-هنر-طلایی.png" width="125px" />
+                <img src="/images/دانشگاه-هنر-طلایی.png" width="100px" />
             </a>
         </div>
 
@@ -38,7 +38,7 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <p>مالکیت حقوقی و معنوی این تارنما متعلق به دبیرخانه جشنواره مهر آفرینش می باشد</p>
+            <p>مالکیت حقوقی و معنوی این تارنما متعلق به آفرینش های رضوی آستان قدس رضوی می باشد</p>
         </div>
     </div>
 </footer>
@@ -55,8 +55,8 @@
         $('.slick').slick(
             {
             infinite: true,
-            slidesToShow: 9,
-            slidesToScroll: 9,
+            slidesToShow: 12,
+            slidesToScroll: 12,
             autoplay: true,
             autoplaySpeed: 2000,
             rtl:true,

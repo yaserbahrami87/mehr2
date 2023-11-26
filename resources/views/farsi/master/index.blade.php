@@ -8,7 +8,7 @@
     <meta name="author" content="یاسر بهرامی">
 
     <title>جشنواره مهر آفرینش</title>
-    <meta name="description" content="جشنواره مهر آفرینش ">
+    <meta name="description" content="جشنواره مهر">
 
 
     <!-- Bootstrap CSS -->

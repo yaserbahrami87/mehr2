@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-12 text-center text-light mb-3">
-        <img src="/images/logo_aq_gold.png" width="200px" class="mb-3" />
+        <img src="/images/logo_aq_gold.png" width="170px" class="mb-3" />
         <h3>راه های ارتباطی:</h3>
         <p class="text-light">مشـهـد مقدس. خـیـــابـــان کــوهـســنــگی 17. پـلاک 14 . مکــــتــب هنــــر رضــــــوان</p>
         <a href="tel:05138467644" class="mr-3">05138467644</a>
