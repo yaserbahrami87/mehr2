@@ -31,7 +31,7 @@
         <div class="row">
 
                 <nav class="col-12 navbar navbar-expand-lg navbar-light bg-transparent mb-5">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/">
                         <img src="/images/golden_logo.png" class="img-fluid" />
                     </a>
 

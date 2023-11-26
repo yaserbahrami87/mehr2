@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\festival;
 use App\gallery;
+use App\gallery_category;
 use Illuminate\Http\Request;
 
 class GalleryController extends Controller
@@ -47,12 +48,42 @@ class GalleryController extends Controller
      */
     public function show(festival $festival,Request $request)
     {
+        if($request->has('category'))
+        {
+            $status=gallery_category::where('category_fa',$request->category)
+                                ->first();
+            if($status)
+            {
+                $galleries=gallery::where('festival_id','=',$festival->id)
+                                ->where('gallery_category_id',$status->id)
+                                ->paginate(20);
+                $galleries->appends(['category' => $request['category']]);
 
-        $galleries=gallery::where('festival_id','=',$festival->id)
-                            ->paginate(20);
+            }
+            else
+            {
+                $galleries=gallery::where('festival_id','=',$festival->id)
+                                ->paginate(20);
+
+                alert()->error('این دسته بندی در گالری وجود ندارد')->persistent('بستن');
+            }
+
+        }
+        else
+        {
+            $galleries=gallery::where('festival_id','=',$festival->id)
+                ->paginate(20);
+        }
+
+
+
+
+        $category_categories=gallery_category::where('status',1)
+                                                ->get();
 
         return view('farsi.gallery')
                         ->with('galleries',$galleries)
+                        ->with('category_categories',$category_categories)
                         ->with('festival',$festival);
     }
 

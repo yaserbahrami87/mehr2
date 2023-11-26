@@ -60,16 +60,16 @@ class CompetitonController extends BaseController
         $this->validate($request,
         [
            'title'                    =>'required|string|max:200|',
-           'description'              =>'required|string|max:200|min:5',
+           'description'              =>'nullable|string|max:200|min:5',
            'competiton_category_id'   =>'required|numeric',
            'competiton_category_child'=>'required|numeric',
            'material_id'              =>'required|numeric',
-            'image'                   =>'required|mimes:jpg,jpeg|max:2048',
-            'image2'                   =>'required|mimes:jpg,jpeg|max:2048',
-            'image3'                   =>'nullable|mimes:jpg,jpeg|max:2048',
-            'image4'                   =>'nullable|mimes:jpg,jpeg|max:2048',
-            'image5'                   =>'nullable|mimes:jpg,jpeg|max:2048',
-            'image6'                   =>'nullable|mimes:jpg,jpeg|max:2048',
+            'image'                   =>'required|mimes:jpg,jpeg|max:4096',
+            'image2'                   =>'required|mimes:jpg,jpeg|max:4096',
+            'image3'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+            'image4'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+            'image5'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+            'image6'                   =>'nullable|mimes:jpg,jpeg|max:4096',
         ]);
 
         $festival=festival::latest()->first();

@@ -71,26 +71,32 @@
                             <div class="form-group">
                                 <label for="image"> عکس اصلی<span class="text-danger">*</span></label>
                                 <input type="file" class="form-control-file" id="image" name="image" value="{{old('image')}}">
+                                <small class="text-muted">فرمت قابل قبول JPG و حداکثر 4 مگابایت</small>
                             </div>
                             <div class="form-group">
                                 <label for="image2"> عکس دوم<span class="text-danger">*</span></label>
                                 <input type="file" class="form-control-file" id="image2" name="image2">
+                                <small class="text-muted">فرمت قابل قبول JPG و حداکثر 4 مگابایت</small>
                             </div>
                             <div class="form-group">
                                 <label for="image3"> عکس سوم</label>
                                 <input type="file" class="form-control-file" id="image3" name="image3">
+                                <small class="text-muted">فرمت قابل قبول JPG و حداکثر 4 مگابایت</small>
                             </div>
                             <div class="form-group">
                                 <label for="image4"> عکس چهارم</label>
                                 <input type="file" class="form-control-file" id="image4" name="image4">
+                                <small class="text-muted">فرمت قابل قبول JPG و حداکثر 4 مگابایت</small>
                             </div>
                             <div class="form-group">
                                 <label for="image5"> عکس پنجم</label>
                                 <input type="file" class="form-control-file" id="image5" name="image5">
+                                <small class="text-muted">فرمت قابل قبول JPG و حداکثر 4 مگابایت</small>
                             </div>
                             <div class="form-group">
                                 <label for="image6"> عکس ششم</label>
                                 <input type="file" class="form-control-file" id="image6" name="image6">
+                                <small class="text-muted">فرمت قابل قبول JPG و حداکثر 4 مگابایت</small>
                             </div>
                             <div class="form-group">
                                 <label for="competiton_category_id">دسته بندی<span class="text-danger">*</span></label>

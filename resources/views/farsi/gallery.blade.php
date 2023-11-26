@@ -108,10 +108,16 @@
 @endsection
 @section('content')
     <div class="container page-top">
-
-
-
         <div class="row">
+            <div class="col-12 col-md-6  mx-auto text-center" >
+                <!-- <a href="" class="btn btn-warning filter-button">همه</a> -->
+                @foreach($category_categories as $item)
+                    <a class="btn btn-warning filter-button" href="?category={{$item->category_fa}}">{{$item->category_fa}}</a>
+                @endforeach
+            </div>
+        </div>
+        <div class="row">
+
             @foreach($galleries as $pic)
 
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
