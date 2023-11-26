@@ -17,7 +17,7 @@
                     <td>{{$gallery_categoriy->category_fa}}</td>
                     <td>{{$gallery_categoriy->status}}</td>
                     <td>
-                        <a href="/admin/gallery_category/{{$gallery_categoriy->category_en}}/edit" class="btn btn-warning">
+                        <a href="/admin/gallery_category/{{$gallery_categoriy->category_fa}}/edit" class="btn btn-warning">
                             <i class="bi bi-pencil-square"></i>
                         </a>
                     </td>
