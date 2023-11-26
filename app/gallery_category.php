@@ -12,7 +12,7 @@ class gallery_category extends Model
 
     public function getRouteKeyName()
     {
-        return 'category_en';
+        return 'category_fa';
     }
 
     public function gallery()
