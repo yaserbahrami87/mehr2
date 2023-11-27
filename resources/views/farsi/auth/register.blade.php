@@ -55,7 +55,7 @@
                         <div class="form-group row" dir="">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('تلفن:') }} <span class="text-danger ">*</span></label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control text-right" id="tel_" name="tel" />
+                                <input type="text" class="form-control text-right" id="tel_" name="tel" value="{{ old('tel') }}" />
                                 @error('tel')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -68,11 +68,11 @@
                             <div class="col-md-6">
                                 <select class="form-control" id="education" name="education">
                                     <option disabled selected>انتخاب کنید</option>
-                                    <option value="1">دیپلم</option>
-                                    <option value="2">فوق دیپلم</option>
-                                    <option value="3">لیسانس</option>
-                                    <option value="4">فوق لیسانس</option>
-                                    <option value="5">دکتری</option>
+                                    <option value="1" @if(old('education')==1) selected @endif>دیپلم</option>
+                                    <option value="2" @if(old('education')==2) selected @endif >فوق دیپلم</option>
+                                    <option value="3" @if(old('education')==3) selected @endif >لیسانس</option>
+                                    <option value="4" @if(old('education')==4) selected @endif >فوق لیسانس</option>
+                                    <option value="5" @if(old('education')==5) selected @endif >دکتری</option>
                                 </select>
                                 @error('education')
                                     <span class="invalid-feedback" role="alert">
