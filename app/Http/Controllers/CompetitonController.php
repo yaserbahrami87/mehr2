@@ -20,6 +20,7 @@ class CompetitonController extends BaseController
      */
     public function index()
     {
+
         $festival=festival::latest()->first();
         return view('user_fa.competition.competition_all')
             ->with('festival',$festival);
