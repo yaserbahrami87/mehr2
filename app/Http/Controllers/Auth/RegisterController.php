@@ -55,7 +55,7 @@ class RegisterController extends Controller
             'lname'     => ['required', 'string', 'max:255'],
             'email'     => ['nullable', 'string', 'email', 'max:255', 'unique:users'],
             'password'  => ['required', 'string', 'min:8', 'confirmed'],
-            'tel'       => ['nullable', 'string', 'min:8'],
+            'tel'       => ['required', 'string', 'min:8'],
             'education' => ['required', 'numeric', 'between:1,5'],
             'field_study' => ['required', 'string', 'min:3'],
             'state_id'  =>'required_if:code,+98','numeric',

@@ -40,10 +40,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('پست الکترونیکی:') }} <span class="text-danger ">*</span></label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('پست الکترونیکی:') }} </label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}"  autocomplete="email">
 
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -85,7 +85,7 @@
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('رشته تحصیلی:') }} <span class="text-danger ">*</span></label>
 
                             <div class="col-md-6">
-                                <input id="field_study" type="text" class="form-control @error('field_study') is-invalid @enderror" name="field_study" value="{{ old('field_study') }}" required autocomplete="field_study">
+                                <input id="field_study" type="text" class="form-control @error('field_study') is-invalid @enderror" name="field_study" value="{{ old('field_study') }}" autocomplete="field_study">
 
                                 @error('field_study')
                                     <span class="invalid-feedback" role="alert">

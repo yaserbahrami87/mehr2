@@ -336,6 +336,11 @@
                         <img src="/images/دانشگاه-کاشان.png"  width="100%" />
                     </a>
                 </div>
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/دانشگاه-شیراز.png"  width="100%" />
+                    </a>
+                </div>
 
                 <div>
                     <a href="https://www.aqart.ir/" target="_blank">

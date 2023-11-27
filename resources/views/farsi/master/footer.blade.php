@@ -21,12 +21,14 @@
         </div>
         -->
         <div class="col-md-4 text-center">
-            <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
-                <img src="/images/logo_maktab_gold.png" width="100px"  />
-            </a>
+
 
             <a href="https://www.aqart.ir/" target="_blank">
                 <img src="/images/logo_aq_gold.png" width="100px" />
+            </a>
+
+            <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
+                <img src="/images/logo_maktab_gold.png" width="100px"  />
             </a>
 
             <a href="https://www.aqart.ir/" target="_blank">
@@ -38,7 +40,7 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <p>مالکیت حقوقی و معنوی این تارنما متعلق به آفرینش های رضوی آستان قدس رضوی می باشد</p>
+            <p>مالکیت حقوقی و معنوی این تارنما متعلق متعلق به موسسه آفرینش های هنری آستان قدس رضوی می باشد</p>
         </div>
     </div>
 </footer>
@@ -55,8 +57,8 @@
         $('.slick').slick(
             {
             infinite: true,
-            slidesToShow: 12,
-            slidesToScroll: 12,
+            slidesToShow: 13,
+            slidesToScroll: 13,
             autoplay: true,
             autoplaySpeed: 2000,
             rtl:true,
