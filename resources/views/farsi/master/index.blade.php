@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="author" content="یاسر بهرامی">
 
-    <title>جشنواره مهر آفرینش</title>
+    <title>جشنواره گنجینه مهر </title>
     <meta name="description" content="جشنواره مهر">
 
 
