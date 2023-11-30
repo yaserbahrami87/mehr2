@@ -71,31 +71,6 @@ Route::prefix('farsi')->group(function ()
 
 });
 
-//Route::get('/farsi/gallery',function()
-//{
-//    return view('farsi.gallery');
-//});
-
-//Route::get('/farsi/pillars_category',function()
-//{
-//    return view('farsi.pillars_category');
-//});
-
-
-
-
-
-
-
-
-
-//Route::get('/farsi/register',function()
-//{
-//    return view('farsi.auth.register');
-//});
-
-
-
 
 
 Route::get('/', function () {
@@ -120,10 +95,6 @@ Route::prefix('english')->group(function ()
     Route::post('/register','Auth_en\RegisterEnController@store');
     Route::post('/login','Auth_en\LoginEnController@store');
 
-//    Route::get('/register',function()
-//    {
-//        return view('english.auth.register');
-//    });
 
     Route::get('/register','SiteController@register');
 

@@ -1,8 +1,8 @@
 <tr>
 <td class="header">
 <a href="{{ $url }}" style="display: inline-block;">
-@if (trim($slot) === 'Mazaar')
-<img src="https://photo.mazaar.net/images/logo_green.png" class="logo" alt="Mazaarat">
+@if (trim($slot) === 'Mehr')
+<img src="https://mehrfestivart.ir//images/golden_logo.png" class="logo" alt="Mehr">
 @else
 {{ $slot }}
 @endif

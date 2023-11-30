@@ -94,30 +94,18 @@ class SiteController extends BaseController
                 ->get();
 
 
-            if(session('lang')=='farsi')
-            {
+
                 return view('farsi.auth.register')
                     ->with('states',$states);
-            }
-            else
-            {
-                return view('english.auth.register')
-                    ->with('states',$states);
-            }
+
         }
         else
         {
-            if(session('lang')=='farsi')
-            {
+
                 alert()->error('زمان ثبت نام در جشنواره به اتمام رسیده است')->persistent('بستن');
                 return redirect('/farsi/home');
 
-            }
-            else
-            {
-                alert()->error('The festival is over')->persistent('close');
-                return redirect('/english/home');
-            }
+
 
 
         }

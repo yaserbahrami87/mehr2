@@ -25,15 +25,9 @@ class HomeController extends Controller
     public function index()
     {
 
-        if(session('lang')=='english')
-        {
-            return redirect('/panel/english/competiton/create');
-        }
-        else
-        {
+
             return redirect('/panel/competiton/create');
-//            return view('user_fa.index');
-        }
+
 
 
     }
