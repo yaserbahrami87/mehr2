@@ -255,12 +255,12 @@
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="https://photo.mazaar.net/farsi/news/Announcing%20the%20results%20of%20the%20second%20International%20Mazaarat%20Photo%20Festival/show">
+                            <a href="#">
                                 <img src="/images/بنر-گنجینه-هنر.jpg" class="d-block w-100" alt="...">
                             </a>
                         </div>
                         <div class="carousel-item">
-                            <a href="https://photo.mazaar.net/farsi/news/Announcing%20the%20results%20of%20the%20second%20International%20Mazaarat%20Photo%20Festival/show">
+                            <a href="#">
                                 <img src="/images/بنر سایت .jpg" class="d-block w-100" alt="...">
                             </a>
                         </div>
