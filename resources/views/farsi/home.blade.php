@@ -352,6 +352,11 @@
                         <img src="/images/پژوهشگاه-میراث-فرهنگی.png"  width="100%" />
                     </a>
                 </div>
+                <div>
+                    <a href="https://www.aqart.ir/" target="_blank">
+                        <img src="/images/Alzahra-University1.png"  width="100%" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
