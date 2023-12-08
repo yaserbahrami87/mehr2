@@ -4,9 +4,9 @@
     <div class="col-12 text-center text-light mb-3">
         <img src="/images/logo_aq_gold.png" width="170px" class="mb-3" />
         <h3>راه های ارتباطی:</h3>
-        <p class="text-light">مشـهـد مقدس. خـیـــابـــان کــوهـســنــگی 17. پـلاک 14 . مکــــتــب هنــــر رضــــــوان</p>
-        <a href="tel:05138467644" class="mr-3">05138467644</a>
-        <a href="mailto:info@mehrfestivart.ir" class="d-block">info@mehrfestivart.ir</a>
+        <p class="text-light">{{$settings->where('setting','address')->first()->value}}</p>
+        <a href="tel:{{$settings->where('setting','tel')->first()->value}}" class="mr-3">{{$settings->where('setting','tel')->first()->value}}</a>
+        <a href="mailto:{{$settings->where('setting','email')->first()->value}}" class="d-block">{{$settings->where('setting','email')->first()->value}}</a>
     </div>
     <div class="col-md-6 mx-auto bg-transparent text-light mb-5 p-3" >
         <div class="well well-sm ">

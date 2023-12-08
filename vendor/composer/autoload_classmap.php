@@ -84,6 +84,7 @@ return array(
     'App\\news' => $baseDir . '/app/news.php',
     'App\\pillar' => $baseDir . '/app/pillar.php',
     'App\\refereeing' => $baseDir . '/app/refereeing.php',
+    'App\\setting' => $baseDir . '/app/setting.php',
     'App\\state' => $baseDir . '/app/state.php',
     'Asm89\\Stack\\Cors' => $vendorDir . '/asm89/stack-cors/src/Cors.php',
     'Asm89\\Stack\\CorsService' => $vendorDir . '/asm89/stack-cors/src/CorsService.php',

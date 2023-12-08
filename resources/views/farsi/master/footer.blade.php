@@ -7,10 +7,9 @@
         <div class="col-md-8">
             <b class="d-block">ارتباط با ما</b>
 
-            <p class="m-0 text-justify">مشـهـد مقدس. خیـابـان کـوهـسنـگی 17. پـلاک 14
-                مــکتـب هــــنر رضـــوان</p>
-            <a href="tel:05138467644" class="mr-3">05138467644</a>
-            <a href="mailto:info@mehrfestivart.ir" class="d-block">info@mehrfestivart.ir</a>
+            <p class="m-0 text-justify">{{$settings->where('setting','address')->first()->value}}</p>
+            <a href="tel:{{$settings->where('setting','tel')->first()->value}}" class="mr-3">{{$settings->where('setting','tel')->first()->value}}</a>
+            <a href="mailto:{{$settings->where('setting','email')->first()->value}}" class="d-block">{{$settings->where('setting','email')->first()->value}}</a>
         </div>
         <!--
         <div class="col-md-3 align-items-center text-center p-0 d-flex justify-content-around">

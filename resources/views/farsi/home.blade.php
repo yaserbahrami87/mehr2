@@ -254,16 +254,14 @@
             <div class="col-12 mb-5">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="#">
-                                <img src="/images/بنر-گنجینه-هنر.jpg" class="d-block w-100" alt="...">
-                            </a>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="#">
-                                <img src="/images/بنر سایت .jpg" class="d-block w-100" alt="...">
-                            </a>
-                        </div>
+
+                        @foreach($settings->where('setting','sliders_home') as $slider)
+                            <div class="carousel-item @if($loop->iteration==1) active @endif">
+                                <a href="{{$slider->option}}">
+                                    <img src="/images/{{$slider->value}}" class="d-block w-100" alt="...">
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                     <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -276,12 +274,16 @@
                 </div>
             </div>
             <div class="col-12 slick">
-                <div >
-                    <a href="https://www.aqart.ir/" target="_blank">
-                        <img src="/images/آموزش-عالی-فردوس.png" width="100%" />
-                    </a>
-                </div>
 
+                @foreach($settings->where('setting','colleagues') as $colleague)
+                    <div >
+                        <a href="{{$colleague->option}}" target="_blank">
+                            <img src="/images/{{$colleague->value}}" width="100%" />
+                        </a>
+                    </div>
+                @endforeach
+
+                <!--
                 <div>
                     <a href="https://www.aqart.ir/" target="_blank">
                         <img src="/images/اصفهان.png" width="100%" />
@@ -357,6 +359,7 @@
                         <img src="/images/Alzahra-University1.png"  width="100%" />
                     </a>
                 </div>
+                -->
             </div>
         </div>
     </div>

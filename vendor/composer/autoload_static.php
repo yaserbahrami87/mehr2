@@ -599,6 +599,7 @@ class ComposerStaticInit708d0948389f848a1b066862cc6d04b4
         'App\\news' => __DIR__ . '/../..' . '/app/news.php',
         'App\\pillar' => __DIR__ . '/../..' . '/app/pillar.php',
         'App\\refereeing' => __DIR__ . '/../..' . '/app/refereeing.php',
+        'App\\setting' => __DIR__ . '/../..' . '/app/setting.php',
         'App\\state' => __DIR__ . '/../..' . '/app/state.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
