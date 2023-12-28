@@ -186,6 +186,12 @@ Route::get('/clear_cache',function()
     return "Clear cache";
 });
 
+Route::get('/composer_update',function()
+{
+    Artisan::call('cache:clear');
+    return "Clear cache";
+});
+
 Route::get('/download',function()
 {
     Artisan::call('competiton:mausolea');
