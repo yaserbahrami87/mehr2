@@ -23,7 +23,12 @@ class CompetitonController extends Controller implements ShouldQueue
             'festival' => 'requried|',
             'q' => 'nullable|'
         ]);
-        return view('admin.competition.competition_all');
+
+        $competitions=competiton::orderby('id','desc')
+                ->get();
+
+        return view('admin.competition.competition_all')
+                            ->with('competitions',$competitions);
 
     }
 
