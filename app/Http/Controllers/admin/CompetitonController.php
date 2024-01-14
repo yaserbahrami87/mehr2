@@ -25,7 +25,7 @@ class CompetitonController extends Controller implements ShouldQueue
         ]);
 
         $competitions=competiton::orderby('id','desc')
-                ->get();
+                ->paginate(20);
 
         return view('admin.competition.competition_all')
                             ->with('competitions',$competitions);
