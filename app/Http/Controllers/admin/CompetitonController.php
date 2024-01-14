@@ -21,7 +21,7 @@ class CompetitonController extends Controller implements ShouldQueue
     {
         $this->validate($request, [
             'festival' => 'requried|',
-            'q' => 'required|'
+            'q' => 'nullable|'
         ]);
         return view('admin.competition.competition_all');
 
