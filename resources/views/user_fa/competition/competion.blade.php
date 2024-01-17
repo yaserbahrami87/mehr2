@@ -65,7 +65,7 @@
                                 <input type="text" class="form-control" id="title" name="title" value="{{old('title')}}">
                             </div>
                             <div class="form-group">
-                                <label for="description">توضیحات</label>
+                                <label for="description">توضیحات<span class="text-danger">*</span></label>
                                 <textarea class="form-control" id="description" name="description" rows="3">{{old('description')}}</textarea>
                             </div>
                             <div class="form-group">

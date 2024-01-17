@@ -61,7 +61,7 @@ class CompetitonController extends BaseController
         $this->validate($request,
         [
            'title'                    =>'required|string|max:200|',
-           'description'              =>'nullable|string|max:200|min:5',
+           'description'              =>'nullable|string|min:5',
            'competiton_category_id'   =>'required|numeric',
            'competiton_category_child'=>'required|numeric',
            'material_id'              =>'required|numeric',
