@@ -48,6 +48,7 @@ class GalleryController extends Controller
      */
     public function show(festival $festival,Request $request)
     {
+
         if($request->has('category'))
         {
             $status=gallery_category::where('category_fa',$request->category)
@@ -56,6 +57,7 @@ class GalleryController extends Controller
             {
                 $galleries=gallery::where('festival_id','=',$festival->id)
                                 ->where('gallery_category_id',$status->id)
+                                ->orderby('id','desc')
                                 ->paginate(20);
                 $galleries->appends(['category' => $request['category']]);
 
@@ -63,6 +65,7 @@ class GalleryController extends Controller
             else
             {
                 $galleries=gallery::where('festival_id','=',$festival->id)
+                                ->orderby('id','desc')
                                 ->paginate(20);
 
                 alert()->error('این دسته بندی در گالری وجود ندارد')->persistent('بستن');
@@ -72,6 +75,7 @@ class GalleryController extends Controller
         else
         {
             $galleries=gallery::where('festival_id','=',$festival->id)
+                ->orderby('id','desc')
                 ->paginate(20);
         }
 
