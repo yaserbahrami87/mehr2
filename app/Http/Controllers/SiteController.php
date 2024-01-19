@@ -87,7 +87,7 @@ class SiteController extends BaseController
 
     public function register()
     {
-        if($this->festival->end_date_fa>$this->dateNow)
+        if($this->festival->end_date_fa>=$this->dateNow)
         {
             //&&($this->festival->end_time_fa.':00'<$this->timeNow)
             $states=state::orderby('name')
