@@ -22,6 +22,7 @@ class CompetitonController extends BaseController
     {
 
         $festival=festival::latest()->first();
+
         return view('user_fa.competition.competition_all')
             ->with('festival',$festival);
     }

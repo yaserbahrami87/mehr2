@@ -21,11 +21,24 @@ class CompetitonController extends Controller implements ShouldQueue
     {
         $this->validate($request, [
             'festival' => 'requried|',
-            'q' => 'nullable|'
+            'q' => 'nullable|string'
         ]);
 
-        $competitions=competiton::orderby('id','desc')
+        if($request->has('category'))
+        {
+            $competitions=competiton::orderby('id','desc')
+                ->where('competiton_category_id',$request->category)
                 ->paginate(20);
+        }
+        else
+        {
+            $competitions=competiton::orderby('id','desc')
+                ->paginate(20);
+        }
+
+
+
+
 
         return view('admin.competition.competition_all')
                             ->with('competitions',$competitions);

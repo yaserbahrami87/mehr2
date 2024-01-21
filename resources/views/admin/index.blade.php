@@ -47,7 +47,7 @@
                     <div class="icon">
                         <i class="ion ion-bag"></i>
                     </div>
-                    <a href="/admin/competiton" class="small-box-footer">اطلاعات بیشتر <i class="fa fa-arrow-circle-left"></i></a>
+                    <a href="/admin/competiton?category={{$competitionGroupby[0]->competiton_category_id}}" class="small-box-footer">اطلاعات بیشتر <i class="fa fa-arrow-circle-left"></i></a>
 
 
                 </div>

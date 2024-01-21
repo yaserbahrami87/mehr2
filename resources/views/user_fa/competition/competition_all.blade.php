@@ -1,16 +1,18 @@
 @extends('user_fa.master.index')
 
 @section('content')
+    @foreach(Auth::user()->competitions->groupby('competiton_category_id') as $competition)
+
     <div class="col-12">
         <div class="card">
-            <h5 class="card-header">بخش نقشی برای زندگی</h5>
+            <h5 class="card-header">{{$competition[0]->competition_category->category_fa}}</h5>
             <div class="card-body">
                 <div class="row">
-                    @foreach(Auth::user()->competitions->where('festival_id','=',$festival->id) as $competiton)
+                    @foreach($competition->where('festival_id','=',$festival->id) as $competiton)
                         <div class="card col-12 col-md-3" >
                             <img src="/images/competition/{{$competiton->image}}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title">{{$competiton->name_place}}</h5>
+                                <h5 class="card-title">{{$competiton->title}}</h5>
 
                             </div>
                             <div class="card-footer text-muted">
@@ -36,4 +38,5 @@
         </div>
 
     </div>
+    @endforeach
 @endsection

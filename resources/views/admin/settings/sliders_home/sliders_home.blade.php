@@ -17,7 +17,7 @@
                         <div class="form-group">
                             <label for="value">عکس</label>
                             <input type="file" class="form-control-file" id="value" name="value">
-                            <small class="text-muted">فرمت مورد قبول JPG,PNG - حداکثر 2 مگابایت</small>
+                            <small class="text-muted">فرمت مورد قبول JPG,PNG,MP4,GIF - حداکثر 50 مگابایت</small>
                         </div>
                     </div>
                     <div class="form-group">

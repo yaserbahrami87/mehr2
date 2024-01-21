@@ -177,7 +177,7 @@ class SettingController extends Controller
     {
 
         $request->validate([
-            'value' =>'required|mimes:jpg,jpeg,png|max:10240',
+            'value' =>'required|mimes:jpg,jpeg,png,mp4|max:50240',
             'option'=>'nullable|url'
         ]);
 
@@ -189,13 +189,17 @@ class SettingController extends Controller
             $image=time().'_'.$request->file('value')->getClientOriginalName();
             $image_thumbnail='thumbnail_'.$image;
             $path=public_path('/images/');
-            $files=$request->file('value')->move($path, $image);
 
-            $img=Image::make($files->getRealPath())
-                ->resize(200,null,function ($constraint) {
-                    $constraint->aspectRatio();
-                })
-                ->save($path.$image_thumbnail);
+            $files=$request->file('value')->move($path, $image);
+            if($request->file('value')->getClientOriginalExtension()!="mp4")
+            {
+                $img=Image::make($files->getRealPath())
+                    ->resize(200,null,function ($constraint) {
+                        $constraint->aspectRatio();
+                    })
+                    ->save($path.$image_thumbnail);
+            }
+
 
             $settings=setting::create([
                 'setting'   =>'sliders_home',
@@ -341,6 +345,26 @@ class SettingController extends Controller
     {
         return view('admin.settings.colleagues.colleagues_edit')
             ->with('setting',$setting);
+    }
+
+    public function colleagues_destory(setting $setting)
+    {
+        if($setting->setting=='colleagues')
+        {
+            $status=$setting->delete();
+            if($status)
+            {
+                alert()->success('لوگو با موفقیت حذف شد')->persistent('بستن');
+            }
+            else
+            {
+                alert()->error('خطا در حذف لوگو')->persistent('بستن');
+            }
+            return back();
+
+        }
+        alert()->error('خطا در سطح دسترسی ')->persistent('بستن');
+        return back();
     }
 
 }

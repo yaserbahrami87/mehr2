@@ -11,6 +11,7 @@
                         <div class="card" >
                             <img src="/images/competition/thumbnail_{{$competition->image}}" class="card-img-top" alt="..." height="160px">
                             <div class="card-body">
+                                <p>نام ارسال کنند:  <a href="/admin/user/{{$competition->user_id}}">{{$competition->user->fname.' '.$competition->user->lname}}</a>  </p>
                                 <p > نام اثر: <b class="card-title">{{$competition->title}}</b></p>
 
                                 <p>توضیحات: <b class="card-text">{{$competition->description}}</b></p>
