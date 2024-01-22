@@ -141,7 +141,8 @@ class CompetitonController extends Controller implements ShouldQueue
      */
     public function show(competiton $competiton)
     {
-        //
+        return view('admin.competition.competition_single')
+                        ->with('competition',$competiton);
     }
 
     /**

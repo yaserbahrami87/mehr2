@@ -17,7 +17,7 @@
                                 <p>توضیحات: <b class="card-text">{{$competition->description}}</b></p>
                             </div>
                             <div class="card-footer">
-                                <a href="/images/competition/{{$competition->image}}" class="btn btn-primary btn-sm   " target="_blank">
+                                <a href="/admin/competiton/{{$competition->id}}" class="btn btn-primary btn-sm   " target="_blank">
                                     مشاهده
                                 </a>
                             </div>
