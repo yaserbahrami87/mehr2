@@ -21,5 +21,10 @@ class competiton extends Model
         return $this->belongsTo('App\competiton_category','competiton_category_id','id');
     }
 
+    public function material()
+    {
+        return $this->belongsTo('App\material');
+    }
+
 
 }

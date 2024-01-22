@@ -57,6 +57,9 @@
                 <p>
                     <span class="font-weight-bold">عنوان اثر: </span>{{$competition->title}}
                 </p>
+                <p>
+                    <span class="font-weight-bold">متریال: </span>{{$competition->material->material}}
+                </p>
 
                 <p>
                     <span class="font-weight-bold">توضیحات: </span>{{$competition->description}}

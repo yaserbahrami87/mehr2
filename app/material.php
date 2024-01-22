@@ -21,4 +21,9 @@ class material extends Model
             default:return "خطا";
         }
     }
+
+    public function competitions()
+    {
+        return $this->hasMany('App\competiton');
+    }
 }
