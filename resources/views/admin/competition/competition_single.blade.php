@@ -11,7 +11,7 @@
 @section('content')
     <div class="col-12 card">
         <div class="card-header">
-            {{$competition->user->fname.' '.$competition->user->lname}}
+
         </div>
         <div class="card-body">
             <div class="container">
@@ -45,8 +45,23 @@
                             @endif
                         </div>
                     </div>
+
                 </div>
             </div>
+        </div>
+        <div class="card-footer">
+
+                <p>
+                    <span class="font-weight-bold">ارسال کننده: </span>{{$competition->user->fname.' '.$competition->user->lname}}
+                </p>
+                <p>
+                    <span class="font-weight-bold">عنوان اثر: </span>{{$competition->title}}
+                </p>
+
+                <p>
+                    <span class="font-weight-bold">توضیحات: </span>{{$competition->description}}
+                </p>
+
         </div>
     </div>
 @endsection
