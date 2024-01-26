@@ -53,13 +53,116 @@
 @section('content')
     <div class="container">
     <div class="row">
-        <div class="col-12 col-md-3  mx-auto mb-b ">
+        <div class="col-12 col-md-4  mx-auto mb-b ">
             <div class="card col-12 mb-3 upload_pictures bg-transparent" >
                 <h3 class="text-muted text-center pb-3">ویرایش اثر</h3>
                 <form method="post" action="/panel/competiton/{{$competiton->id}}" enctype="multipart/form-data">
                     {{csrf_field()}}
                     {{method_field('PATCH')}}
-                    <img src="/images/competition/{{$competiton->image}}" class="img-fluid mb-3" />
+                    <div class="card">
+                        <div  class="card-header text-center">عکس اول</div>
+                        <div class="card-body">
+                            <img src="/images/competition/{{$competiton->image}}" class="img-fluid mb-3 img-thumbnail" />
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="image">تغییر عکس اول</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="image" name="image"  >
+                                    <label class="custom-file-label" for="image">انتخاب عکس</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header text-center">عکس دوم</div>
+                        <div class="card-body">
+                            <img src="/images/competition/{{$competiton->image2}}" class="img-fluid mb-3" />
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="image2">تغییر عکس دوم</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="image2" name="image2" >
+                                    <label class="custom-file-label" for="image2">انتخاب عکس</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        @if(!is_null($competiton->image3))
+                            <div class="card-header text-center">عکس سوم</div>
+                            <img src="/images/competition/{{$competiton->image3}}" class="img-fluid mb-3" />
+                        @endif
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="image3">تغییر عکس سوم</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="image3" name="image3" >
+                                <label class="custom-file-label" for="image3">انتخاب عکس</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        @if(!is_null($competiton->image4))
+                            <div class="card-header text-center">عکس چهارم</div>
+                            <img src="/images/competition/{{$competiton->image4}}" class="img-fluid mb-3" />
+                        @endif
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="image4">تغییر عکس چهارم</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="image4" name="image4" >
+                                    <label class="custom-file-label" for="image4">انتخاب عکس</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        @if(!is_null($competiton->image5))
+                            <div class="card-header  text-center">عکس پنجم</div>
+                            <img src="/images/competition/{{$competiton->image5}}" class="img-fluid mb-3" />
+                        @endif
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="image5">تغییر عکس پنجم</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="image5" name="image5" >
+                                    <label class="custom-file-label" for="image5">انتخاب عکس</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        @if(!is_null($competiton->image6))
+                            <div class="card-header text-center">عکس ششم</div>
+                            <img src="/images/competition/{{$competiton->image6}}" class="img-fluid mb-3" />
+                        @endif
+                        <div class="card-body">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="image3">تغییر عکس ششم</span>
+                                </div>
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="image6" name="image6" >
+                                    <label class="custom-file-label" for="image6">انتخاب عکس</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="form-group">
                         <label for="title"> نام اثر:<span class="text-danger">*</span></label>
                         <input type="text" class="form-control" id="title" name="title" value="{{old('title',$competiton->title)}}">
@@ -68,32 +171,7 @@
                         <label for="description">توضیحات</label>
                         <textarea class="form-control" id="description" name="description" rows="3">{{old('description',$competiton->description)}}</textarea>
                     </div>
-                    <!--
-                    <div class="form-group">
-                        <label for="image"> عکس اصلی<span class="text-danger">*</span></label>
-                        <input type="file" class="form-control-file" id="image" name="image" value="{{old('image')}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="image2"> عکس دوم<span class="text-danger">*</span></label>
-                        <input type="file" class="form-control-file" id="image2" name="image2">
-                    </div>
-                    <div class="form-group">
-                        <label for="image3"> عکس سوم</label>
-                        <input type="file" class="form-control-file" id="image3" name="image3">
-                    </div>
-                    <div class="form-group">
-                        <label for="image4"> عکس چهارم</label>
-                        <input type="file" class="form-control-file" id="image4" name="image4">
-                    </div>
-                    <div class="form-group">
-                        <label for="image5"> عکس پنجم</label>
-                        <input type="file" class="form-control-file" id="image5" name="image5">
-                    </div>
-                    <div class="form-group">
-                        <label for="image6"> عکس ششم</label>
-                        <input type="file" class="form-control-file" id="image6" name="image6">
-                    </div>
-                    -->
+
                     <div class="form-group">
                         <label for="competiton_category_id">دسته بندی<span class="text-danger">*</span></label>
                         <select class="form-control" id="competiton_category_id" name="competiton_category_id">
@@ -105,10 +183,14 @@
                     </div>
 
                     <div class="form-group" id="div_competiton_category_id">
-                        <label for="competiton_category_id">زیرمجموعه:<span class="text-danger">*</span></label>
-                        <select class="form-control" id="competiton_category_id" name="competiton_category_id">
-                            <option disabled selected>انتخاب کنید</option>
+                        <label for="competiton_category_child">زیرمجموعه:<span class="text-danger">*</span></label>
 
+                        <select class="form-control" id="competiton_category_child" name="competiton_category_child">
+                            <option disabled selected>انتخاب کنید</option>
+                            @foreach($competiton_category_child as $item)
+                                <option @if($item->id==$competiton->competiton_category_child) selected @endif value="{{$item->id}}" >{{$item->category_fa}}</option>
+
+                            @endforeach
                         </select>
                     </div>
 

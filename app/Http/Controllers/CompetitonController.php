@@ -214,21 +214,26 @@ class CompetitonController extends BaseController
             ->wherenull('child')
             ->get();
 
+        $competiton_category_child=competiton_category::where('child',$competiton->competiton_category_id)
+                                                        ->where('status',1)
+                                                        ->get();
+
         $materials=material::where('status','=',1)
             ->get();
 
-            if(Auth::user()->id==$competiton->user_id)
-            {
-                return view('user_fa.competition.competition_edit')
-                                ->with('festival',$festival)
-                                ->with('competiton_category',$competiton_category)
-                                ->with('materials',$materials)
-                                ->with('competiton',$competiton);
-            }
-            else
-            {
-                return abort(403);
-            }
+        if(Auth::user()->id==$competiton->user_id)
+        {
+            return view('user_fa.competition.competition_edit')
+                            ->with('festival',$festival)
+                            ->with('competiton_category',$competiton_category)
+                            ->with('materials',$materials)
+                            ->with('competiton_category_child',$competiton_category_child)
+                            ->with('competiton',$competiton);
+        }
+        else
+        {
+            return abort(403);
+        }
     }
 
     public function edit_en(competiton $competiton)
@@ -253,6 +258,7 @@ class CompetitonController extends BaseController
      */
     public function update(Request $request, competiton $competiton)
     {
+        $festival=festival::latest()->first();
 
         $this->validate($request,
             [
@@ -261,20 +267,26 @@ class CompetitonController extends BaseController
                 'competiton_category_id'   =>'required|numeric',
                 'competiton_category_child'   =>'required|numeric',
                 'material_id'              =>'required|numeric',
-//                'image'                   =>'required|mimes:jpg,jpeg|max:1024',
-//                'image2'                   =>'required|mimes:jpg,jpeg|max:1024',
-//                'image3'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-//                'image4'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-//                'image5'                   =>'nullable|mimes:jpg,jpeg|max:1024',
-//                'image6'                   =>'nullable|mimes:jpg,jpeg|max:1024',
+                'image'                    =>'nullable|mimes:jpg,jpeg|max:4096',
+                'image2'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+                'image3'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+                'image4'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+                'image5'                   =>'nullable|mimes:jpg,jpeg|max:4096',
+                'image6'                   =>'nullable|mimes:jpg,jpeg|max:4096',
             ]);
 
-        $status=$competiton->update($request->all());
+        $status=$competiton->update([
+            'title'                     =>$request->title,
+            'description'               =>$request->description,
+            'competiton_category_id'    =>$request->competiton_category_id,
+            'competiton_category_child' =>$request->competiton_category_child,
+            'material_id'               =>$request->material_id,
+        ]);
 
-        if($request->has('image')&&$request->file('image')->isValid())
+        if($request->has('image'))
         {
-            $image=$competiton->image;
-            $image_thumbnail='thumbnail_'.$competiton->image;
+            $image=pathinfo(public_path('/images/competition/'.$competiton->image))['filename'].'.'.$request->file('image')->extension();
+            $image_thumbnail='thumbnail_'.$image;
             $path=public_path('/images/competition/');
             $files=$request->file('image')->move($path, $image);
             $request->image=$image;
@@ -288,22 +300,130 @@ class CompetitonController extends BaseController
             $competiton->save();
         }
 
-        if($request->has('image2')&&$request->file('image2')->isValid())
+        if($request->has('image2'))
         {
-            $image=$competiton->image2;
-            $image_thumbnail='thumbnail_'.$competiton->image2;
+
+            $image=pathinfo(public_path('/images/competition/'.$competiton->image2))['filename'].'.'.$request->file('image2')->extension();
+
+            $image_thumbnail='thumbnail_'.$image;
             $path=public_path('/images/competition/');
             $files=$request->file('image2')->move($path, $image);
-            $request->image2=$image;
+
             $img=Image::make($files->getRealPath())
                 ->resize(200,null,function ($constraint) {
                     $constraint->aspectRatio();
                 })
                 ->save($path.$image_thumbnail);
-            $request->image2=$image;
+
             $competiton->image2=$image;
             $competiton->save();
+
         }
+
+        if($request->has('image3'))
+        {
+            if(is_null($competiton->image3))
+            {
+                $image=Auth::user()->id.'_'.$request->competiton_category_id.'_'.$festival->id.'_'.time().rand().'.'.$request->file('image3')->extension();
+            }
+            else
+            {
+                $image=pathinfo(public_path('/images/competition/'.$competiton->image3))['filename'].'.'.$request->file('image3')->extension();
+            }
+
+
+            $image_thumbnail='thumbnail_'.$image;
+            $path=public_path('/images/competition/');
+            $files=$request->file('image3')->move($path, $image);
+
+            $img=Image::make($files->getRealPath())
+                ->resize(200,null,function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save($path.$image_thumbnail);
+
+            $competiton->image3=$image;
+            $competiton->save();
+
+        }
+
+        if($request->has('image4'))
+        {
+            if(is_null($competiton->image4))
+            {
+                $image=Auth::user()->id.'_'.$request->competiton_category_id.'_'.$festival->id.'_'.time().rand().'.'.$request->file('image4')->extension();
+            }
+            else
+            {
+                $image=pathinfo(public_path('/images/competition/'.$competiton->image4))['filename'].'.'.$request->file('image4')->extension();
+            }
+
+
+            $image_thumbnail='thumbnail_'.$image;
+            $path=public_path('/images/competition/');
+            $files=$request->file('image4')->move($path, $image);
+
+            $img=Image::make($files->getRealPath())
+                ->resize(200,null,function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save($path.$image_thumbnail);
+
+            $competiton->image4=$image;
+            $competiton->save();
+        }
+
+        if($request->has('image5'))
+        {
+            if(is_null($competiton->image5))
+            {
+                $image=Auth::user()->id.'_'.$request->competiton_category_id.'_'.$festival->id.'_'.time().rand().'.'.$request->file('image5')->extension();
+            }
+            else
+            {
+                $image=pathinfo(public_path('/images/competition/'.$competiton->image5))['filename'].'.'.$request->file('image5')->extension();
+            }
+
+
+            $image_thumbnail='thumbnail_'.$image;
+            $path=public_path('/images/competition/');
+            $files=$request->file('image5')->move($path, $image);
+
+            $img=Image::make($files->getRealPath())
+                ->resize(200,null,function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save($path.$image_thumbnail);
+
+            $competiton->image5=$image;
+            $competiton->save();
+        }
+        if($request->has('image6'))
+        {
+            if(is_null($competiton->image6))
+            {
+                $image=Auth::user()->id.'_'.$request->competiton_category_id.'_'.$festival->id.'_'.time().rand().'.'.$request->file('image6')->extension();
+            }
+            else
+            {
+                $image=pathinfo(public_path('/images/competition/'.$competiton->image6))['filename'].'.'.$request->file('image6')->extension();
+            }
+
+
+            $image_thumbnail='thumbnail_'.$image;
+            $path=public_path('/images/competition/');
+            $files=$request->file('image6')->move($path, $image);
+
+            $img=Image::make($files->getRealPath())
+                ->resize(200,null,function ($constraint) {
+                    $constraint->aspectRatio();
+                })
+                ->save($path.$image_thumbnail);
+
+            $competiton->image6=$image;
+            $competiton->save();
+        }
+
 
 
 
