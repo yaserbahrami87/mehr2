@@ -55,6 +55,7 @@
                                 <table class="table table-bordered table-hover table-striped " id="dataTable">
                                     <thead>
                                     <th>مشخصات</th>
+                                    <th>نام اثر</th>
                                     <th>ایمیل</th>
                                     <th>تلفن</th>
                                     </thead>
@@ -63,6 +64,7 @@
 
                                         <tr>
                                             <td>{{$item->user->fname.' '.$item->user->lname}}</td>
+                                            <td>{{$item->title}}</td>
                                             <td dir="ltr">{{$item->user->email}}</td>
                                             <td dir="ltr">{{$item->user->tel}}</td>
 
