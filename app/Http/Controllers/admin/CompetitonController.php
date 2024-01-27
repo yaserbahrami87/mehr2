@@ -27,8 +27,12 @@ class CompetitonController extends Controller implements ShouldQueue
         if($request->has('category'))
         {
             $competitions=competiton::orderby('id','desc')
-                ->where('competiton_category_id',$request->category)
-                ->paginate(20);
+                            ->where('competiton_category_id',$request->category)
+                            ->paginate(20);
+
+            $competition_lists=competiton::orderby('id','desc')
+                            ->where('competiton_category_id',$request->category)
+                            ->get();
 
             $competitions->appends(['category' => $request['category']]);
         }
@@ -36,13 +40,14 @@ class CompetitonController extends Controller implements ShouldQueue
         {
             $competitions=competiton::orderby('id','desc')
                 ->paginate(20);
+
+            $competition_lists=competiton::orderby('id','desc')
+                                ->get();
         }
 
 
-
-
-
         return view('admin.competition.competition_all')
+                            ->with('competition_lists',$competition_lists)
                             ->with('competitions',$competitions);
 
     }
