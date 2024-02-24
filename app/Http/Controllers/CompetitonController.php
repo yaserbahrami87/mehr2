@@ -34,18 +34,31 @@ class CompetitonController extends BaseController
      */
     public function create()
     {
-        $festival=festival::latest()->first();
-        $competiton_category=competiton_category::where('status','=',1)
-                                                ->wherenull('child')
-                                                ->get();
+        if($this->festival->end_date_fa>=$this->dateNow)
+        {
+            $festival=festival::latest()->first();
+            $competiton_category=competiton_category::where('status','=',1)
+                                                    ->wherenull('child')
+                                                    ->get();
 
-        $materials=material::where('status','=',1)
-                                ->get();
+            $materials=material::where('status','=',1)
+                                    ->get();
 
-        return view('user_fa.competition.competion')
-            ->with('competiton_category',$competiton_category)
-            ->with('materials',$materials)
-            ->with('festival',$festival);
+            return view('user_fa.competition.competion')
+                ->with('competiton_category',$competiton_category)
+                ->with('materials',$materials)
+                ->with('festival',$festival);
+        }
+        else
+        {
+
+            alert()->error('زمان ارسال اثر در جشنواره به اتمام رسیده است')->persistent('بستن');
+            return redirect('/farsi/home');
+
+
+
+
+        }
     }
 
 
